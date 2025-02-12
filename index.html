@@ -199,17 +199,17 @@
     <div class="service-container">
         <h2>Our Services</h2>
         <div class="service-card">
-            <img src="image1234.jpg" alt="Freight Transport">
+            <img src="image.png" alt="Freight Transport">
             <h3>Freight Transport</h3>
             <p>We provide reliable and fast delivery for all types of cargo across the region.</p>
         </div>
         <div class="service-card">
-            <img src="image1234.jpg" alt="Equipment Transportation">
+            <img src="image.png" alt="Equipment Transportation">
             <h3>Equipment Transportation</h3>
             <p>Our experts will safely transport any equipment and machinery with care.</p>
         </div>
         <div class="service-card">
-            <img src="image1234.jpg" alt="Goods Delivery">
+            <img src="image.png" alt="Goods Delivery">
             <h3>Goods Delivery</h3>
             <p>We ensure timely delivery of goods in excellent condition.</p>
         </div>
@@ -217,47 +217,60 @@
 </section>
 
 
-<style>
-    #services {
-        padding: 50px;
-        background-image: url('image1234.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-    }
 
-    #services .service-container {
-        text-align: center;
-    }
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    #services h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
 
-    .service-card {
-        margin: 20px;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 8px;
-    }
+/* Стили для секции с сервисами */
+#services {
+    background: url('image.png') no-repeat center center; /* Вставляем картинку фоном */
+    background-size: cover; /* Покрытие на весь экран */
+    padding: 50px 0;
+    height: 100vh; /* Высота секции, чтобы она не выходила за пределы экрана */
+    color: white;
+}
 
-    .service-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
 
-    .service-card h3 {
-        font-size: 2rem;
-        margin-top: 15px;
-    }
+.service-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .service-card p {
-        font-size: 1.2rem;
-        margin-top: 10px;
-    }
-</style>
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 1.2rem;
+}
+
 
     <!-- Contact Information Section -->
     <section id="contact">
