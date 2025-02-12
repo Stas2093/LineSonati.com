@@ -17,18 +17,9 @@
 
         header {
             position: relative;
-            height: 50vh; /* Уменьшаем высоту видео на 50% */
-            overflow: hidden;
-        }
-
-        header video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%; /* Видео растягивается по ширине */
-            height: 100%; /* Растягиваем видео по высоте */
-            object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
-            z-index: -1; /* Размещаем видео на заднем плане */
+            height: 100vh;
+            background: url('image.png') no-repeat center center/cover; /* Фоновое изображение */
+            color: white;
         }
 
         header .content {
@@ -37,100 +28,84 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
-            font-size: 2rem; /* Уменьшаем размер шрифта */
         }
 
-        header .content h1 {
-            font-size: 3rem; /* Уменьшаем размер заголовка */
-            font-weight: bold;
-            margin-bottom: 20px;
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
         }
 
         section {
             padding: 50px;
-            text-align: center;
+            background: #f9f9f9;
         }
 
-        .services {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-        }
-
-        .service {
-            width: 30%;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background-color: #264653;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
 
         .contact-info {
-            margin-top: 30px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <video autoplay loop muted>
-        <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
-        Ваш браузер не поддерживает тег video.
-    </video>
-    <div class="content">
-        <h1>LineSonati s.r.o.</h1>
-        <p>Reliable Transportation Solutions for Your Business</p>
-    </div>
-</header>
-
-<section id="about">
-    <h2>About the Company</h2>
-    <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Freight Transport</h3>
-            <p>We provide reliable and fast delivery for all types of cargo across the region.</p>
+    <!-- Header section with background image and company name -->
+    <header>
+        <div class="content">
+            <h1>LineSonati s.r.o.</h1>
+            <p>Reliable Transportation Solutions for Your Business</p>
         </div>
-        <div class="service">
-            <h3>Equipment Transportation</h3>
-            <p>Our experts will safely transport any equipment and machinery with care.</p>
-        </div>
-        <div class="service">
-            <h3>Goods Delivery</h3>
-            <p>We ensure timely delivery of goods in excellent condition.</p>
-        </div>
-    </div>
-</section>
+    </header>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-        <p><strong>Address:</strong> Pracska 1881/14, Praha 10 Zabehlice, PSC 10600, Ceska Republika</p>
-        <p><strong>ICO:</strong> 19317760</p>
-        <p><strong>DIC:</strong> 19317760</p>
-        <p><strong>Email:</strong> <a href="mailto:s.ohnianykov@linesonati.com">s.ohnianykov@linesonati.com</a></p>
-        <p><strong>Phone:</strong> +420773883525</p>
-    </div>
-</section>
+    <!-- About Us Section -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
+    </section>
 
-<footer>
-    <p>© 2025 LineSonati s.r.o. All Rights Reserved.</p>
-</footer>
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p>We offer reliable and fast transportation services for various needs:</p>
+        <ul>
+            <li>Freight Transport</li>
+            <li>Equipment Transportation</li>
+            <li>Goods Delivery</li>
+        </ul>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> Pracska 1881/14, Praha 10 Zabehlice, PSC 10600</p>
+            <p><strong>ICO:</strong> 19317760</p>
+            <p><strong>DIC:</strong> 19317760</p>
+            <p><strong>Email:</strong> <a href="mailto:s.ohnianykov@linesonati.com">s.ohnianykov@linesonati.com</a></p>
+            <p><strong>Phone:</strong> +420773883525</p>
+            <p><strong>Country:</strong> Czech Republic</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 LineSonati s.r.o. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
