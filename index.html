@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LineSonati s.r.o. - Transportation Company</title>
-  
-  <!-- Подключение стилей -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineSonati s.r.o. - Transportation Company</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-</head>
-<body>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-  <!-- Ваш контент -->
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
 
-</body>
-</html>
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
 
- 
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
         }
         header {
             position: relative;
@@ -164,46 +195,15 @@
     </section>
 
     <!-- Services Section -->
-<section id="services">
-  <h2>Our Services</h2>
-  <p>Top Transportation and Logistic Company</p>
-  <div class="service-container">
-    <div class="service-card">
-      <img src="image1.jpg" alt="Support">
-      <h3>Support</h3>
-      <p>24/7 communication with clients for prompt resolution of any issues and problems.</p>
-    </div>
-    <div class="service-card">
-      <img src="image2.jpg" alt="Availability">
-      <h3>Availability</h3>
-      <p>Flexible work schedule of the company to meet the needs of every client.</p>
-    </div>
-    <div class="service-card">
-      <img src="image3.jpg" alt="Risk-Free Transport">
-      <h3>Risk-Free Transport</h3>
-      <p>Transportation of dangerous goods using the experience and expertise of our specialists.</p>
-    </div>
-    <div class="service-card">
-      <img src="image4.jpg" alt="Tailored Transportation">
-      <h3>Tailored Transportation</h3>
-      <p>Individual selection of the optimal transport for any cargo.</p>
-    </div>
-    <div class="service-card">
-      <img src="image5.jpg" alt="Safety and Protection">
-      <h3>Safety and Protection</h3>
-      <p>Insurance of every cargo shipment to ensure safety and protect the interests of our clients.</p>
-    </div>
-    <div class="service-card">
-      <img src="image6.jpg" alt="Swift Assurance">
-      <h3>Swift Assurance</h3>
-      <p>Fast and reliable delivery with high quality.</p>
-    </div>
-  </div>
-</section>
-
-
-
-
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p>We offer reliable and fast transportation services for various needs:</p>
+        <ul>
+            <li>Freight Transport</li>
+            <li>Equipment Transportation</li>
+            <li>Goods Delivery</li>
+        </ul>
+    </section>
 
     <!-- Contact Information Section -->
     <section id="contact">
