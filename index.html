@@ -50,13 +50,21 @@
             border-radius: 5px;
         }
 
-        /* Header section with background image */
+      
         header {
             position: relative;
-            height: 100vh;
-            background:  url('image.png') no-repeat center center/cover; /* Фоновое изображение */
-            color: white;
-            padding-top: 70px; /* Adjusted padding for fixed navbar */
+            height: 100vh; /* Высота на весь экран */
+            overflow: hidden; /* Прячет лишнюю часть видео, если оно выходит за экран */
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Растягиваем видео по ширине */
+            height: 100%; /* Растягиваем видео по высоте */
+            object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
+            z-index: -1; /* Размещаем видео на заднем плане */
         }
 
         header .content {
@@ -65,17 +73,50 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            color: white;
+            font-size: 3rem;
         }
 
-        header h1 {
+        header .content h1 {
             font-size: 4rem;
-            margin-bottom: 10px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        header p {
-            font-size: 1.5rem;
+        nav {
+            background-color: #264653;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
         }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <video autoplay loop muted>
+        <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <div class="content">
+        <h1>LineSonati s.r.o.</h1>
+        <p>Reliable Transportation Solutions for Your Business</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact</a>
+</nav>
         section {
             padding: 50px;
             background: #f9f9f9;
