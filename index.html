@@ -1,173 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LineSonati s.r.o. - Transportation Company</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LineSonati s.r.o. - Transportation Company</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin-top: 50px; /* To offset the fixed navbar */
-        }
+    body {
+      font-family: 'Arial', sans-serif;
+    }
 
-        /* Fixed Navigation Bar */
-        nav {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 10;
-        }
+    header {
+      position: relative;
+      height: 100vh;
+      background: #000;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-        }
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%; /* Уменьшаем ширину на 50% */
+      height: 50%; /* Уменьшаем высоту на 50% */
+      object-fit: cover;
+      z-index: -1; /* Убираем видео на задний план */
+    }
 
-        nav ul li {
-            margin-right: 20px;
-        }
+    header .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 10px 15px;
-        }
+    header .content h1 {
+      font-size: 4em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
+    nav {
+      background-color: #264653;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
 
-        /* Header with video background */
-        header {
-            position: relative;
-            height: 50vh;
-            width: 50%;
-            overflow: hidden;
-            background-color: 143479-782374009_small.mp4
-        }
+    nav a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        header video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1; /* Make sure video stays behind text */
-        }
+    nav a:hover {
+      background-color: #2a9d8f;
+    }
 
-        header .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            font-size: 2rem;
-        }
+    section {
+      padding: 50px;
+    }
 
-        header h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.5rem;
-        }
-
-        /* Main content sections */
-        section {
-            padding: 50px;
-            background: #f9f9f9;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    footer {
+      text-align: center;
+      background-color: #264653;
+      color: white;
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#partners">Partners</a></li>
-        </ul>
-        <div>
-            <select id="languageSelect" onchange="changeLanguage()">
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="ru">Русский</option>
-                <option value="cz">Čeština</option>
-            </select>
-        </div>
-    </nav>
+  <header>
+    <video autoplay loop muted>
+      <source src="143479-782374009_small.mp4" type="video/mp4">
+      Ваш браузер не поддерживает это видео.
+    </video>
+    <div class="content">
+      <h1>LineSonati s.r.o.</h1>
+      <p>Reliable Transportation Solutions for Your Business</p>
+    </div>
+  </header>
 
-    <!-- Header with video -->
-    <header>
-        <video autoplay loop muted>
-            <source src="143479-782374009_small.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-        <div class="content">
-            <h1>LineSonati s.r.o.</h1>
-            <p>Reliable Transportation Solutions for Your Business</p>
-        </div>
-    </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#partners">Partners</a>
+  </nav>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2 class="section-title">About Us</h2>
-        <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2 class="section-title">Our Services</h2>
-        <p>We offer reliable and fast transportation services for various needs:</p>
-        <ul>
-            <li>Freight Transport</li>
-            <li>Equipment Transportation</li>
-            <li>Goods Delivery</li>
-        </ul>
-    </section>
+  <footer>
+    <p>© 2025 LineSonati s.r.o. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Contact Information Section -->
-    <section id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-info">
-            <p><strong>Address:</strong> Pracska 1881/14, Praha 10 Zabehlice, PSC 10600</p>
-            <p><strong>ICO:</strong> 19317760</p>
-            <p><strong>DIC:</strong>
+</body>
+</html>
