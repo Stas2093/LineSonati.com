@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LineSonati s.r.o.</title>
+    <title>LineSonati s.r.o. - Transportation Company</title>
     <style>
         * {
             margin: 0;
@@ -16,120 +16,121 @@
         }
 
         header {
-            background-color: #f5f5f5;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
+            position: relative;
+            height: 50vh; /* Уменьшаем высоту видео на 50% */
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
             top: 0;
             left: 0;
-            z-index: 999;
+            width: 100%; /* Видео растягивается по ширине */
+            height: 100%; /* Растягиваем видео по высоте */
+            object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
+            z-index: -1; /* Размещаем видео на заднем плане */
         }
 
-        nav {
+        header .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 2rem; /* Уменьшаем размер шрифта */
+        }
+
+        header .content h1 {
+            font-size: 3rem; /* Уменьшаем размер заголовка */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .services {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            margin-top: 50px;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-            padding: 10px;
-            transition: color 0.3s;
+        .service {
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        nav a:hover {
-            color: #007bff;
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
-        .language-select {
-            display: flex;
-            align-items: center;
+        .contact-info {
+            margin-top: 30px;
         }
-
-        .language-select select {
-            padding: 5px;
-            font-size: 14px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #333;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
-
-        .nav-container a:hover {
-            background-color: #555;
-        }
-
-        .active {
-            background-color: #007bff;
-        }
-
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#aboutus">About Us</a>
-            <a href="#partners">Partners</a>
-            <a href="#contact">Contact</a>
-            <div class="language-select">
-                <select name="languages" id="languages">
-                    <option value="en">EN</option>
-                    <option value="de">DE</option>
-                    <option value="ru">RU</option>
-                    <option value="cs">CS</option>
-                </select>
-            </div>
-        </nav>
-    </header>
 
-    <div id="home">
-        <!-- Your Home section content goes here -->
+<header>
+    <video autoplay loop muted>
+        <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <div class="content">
+        <h1>LineSonati s.r.o.</h1>
+        <p>Reliable Transportation Solutions for Your Business</p>
     </div>
+</header>
 
-    <div id="services">
-        <!-- Your Services section content goes here -->
+<section id="about">
+    <h2>About the Company</h2>
+    <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Freight Transport</h3>
+            <p>We provide reliable and fast delivery for all types of cargo across the region.</p>
+        </div>
+        <div class="service">
+            <h3>Equipment Transportation</h3>
+            <p>Our experts will safely transport any equipment and machinery with care.</p>
+        </div>
+        <div class="service">
+            <h3>Goods Delivery</h3>
+            <p>We ensure timely delivery of goods in excellent condition.</p>
+        </div>
     </div>
+</section>
 
-    <div id="aboutus">
-        <!-- Your About Us section content goes here -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Address:</strong> Pracska 1881/14, Praha 10 Zabehlice, PSC 10600, Ceska Republika</p>
+        <p><strong>ICO:</strong> 19317760</p>
+        <p><strong>DIC:</strong> 19317760</p>
+        <p><strong>Email:</strong> <a href="mailto:s.ohnianykov@linesonati.com">s.ohnianykov@linesonati.com</a></p>
+        <p><strong>Phone:</strong> +420773883525</p>
     </div>
+</section>
 
-    <div id="partners">
-        <!-- Your Partners section content goes here -->
-    </div>
+<footer>
+    <p>© 2025 LineSonati s.r.o. All Rights Reserved.</p>
+</footer>
 
-    <div id="contact">
-        <!-- Your Contact section content goes here -->
-    </div>
-
-    <script>
-        // JavaScript to handle the language switch if needed
-        const languageSelect = document.getElementById('languages');
-        languageSelect.addEventListener('change', (event) => {
-            // Handle language change
-            alert(`You selected ${event.target.value} language`);
-        });
-    </script>
 </body>
 </html>
