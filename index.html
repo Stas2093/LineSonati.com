@@ -29,33 +29,30 @@
 </header>
 
 }
-
-    }
-
     header video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Видео должно растягиваться, чтобы покрыть весь экран */
+  z-index: -1; /* Размещаем видео на заднем плане */
     }
 
     header .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      font-size: 3em;
+       position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 3rem;
     }
 
     header .content h1 {
-      font-size: 4em;
-      font-weight: bold;
-      margin-bottom: 10px;
+ font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
     }
 
     header .content p {
