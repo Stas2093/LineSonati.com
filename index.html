@@ -17,15 +17,15 @@
 
         header {
             position: relative;
-            height: 100vh; /* Высота на весь экран */
-            overflow: hidden; /* Прячет лишнюю часть видео, если оно выходит за экран */
+            height: 50vh; /* Уменьшаем высоту видео на 50% */
+            overflow: hidden;
         }
 
         header video {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%; /* Растягиваем видео по ширине */
+            width: 100%; /* Видео растягивается по ширине */
             height: 100%; /* Растягиваем видео по высоте */
             object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
             z-index: -1; /* Размещаем видео на заднем плане */
@@ -38,11 +38,11 @@
             transform: translate(-50%, -50%);
             text-align: center;
             color: white;
-            font-size: 3rem;
+            font-size: 2rem; /* Уменьшаем размер шрифта */
         }
 
         header .content h1 {
-            font-size: 4rem;
+            font-size: 3rem; /* Уменьшаем размер заголовка */
             font-weight: bold;
             margin-bottom: 20px;
         }
