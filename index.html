@@ -14,6 +14,7 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         /* Navigation bar styles */
         nav {
             background-color: #333;
@@ -49,20 +50,23 @@
             border-radius: 5px;
         }
 
+        /* Header section with background image and company name */
         header {
             position: relative;
-            height: 50vh; /* Уменьшаем высоту видео на 50% */
-            overflow: hidden;
+            height: 100vh;
+            background: url('143479-782374009_small.mp4') no-repeat center center/cover;  /* Установите нужную картинку фона */
+            color: white;
+            padding-top: 70px; /* Adjusted padding for fixed navbar */
         }
 
         header video {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%; /* Видео растягивается по ширине */
-            height: 100%; /* Растягиваем видео по высоте */
-            object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
-            z-index: -1; /* Размещаем видео на заднем плане */
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         header .content {
@@ -71,14 +75,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
-            font-size: 2rem; /* Уменьшаем размер шрифта */
         }
 
-        header .content h1 {
-            font-size: 3rem; /* Уменьшаем размер заголовка */
-            font-weight: bold;
-            margin-bottom: 20px;
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
         }
 
         section {
@@ -127,6 +132,10 @@
 
     <!-- Header section with background image and company name -->
     <header>
+        <video autoplay loop muted>
+            <source src="143479-782374009_small.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
         <div class="content">
             <h1>LineSonati s.r.o.</h1>
             <p>Reliable Transportation Solutions for Your Business</p>
@@ -172,24 +181,4 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 LineSonati s.r.o. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        function changeLanguage() {
-            const language = document.getElementById("languageSelect").value;
-            // Change the website content based on the selected language
-            if (language === 'en') {
-                alert('Language switched to English');
-                // You can implement actual language switching logic here
-            } else if (language === 'de') {
-                alert('Sprache auf Deutsch gewechselt');
-            } else if (language === 'ru') {
-                alert('Язык переключен на русский');
-            } else if (language === 'cz') {
-                alert('Jazyk změněn na češtinu');
-            }
-        }
-    </script>
-
-</body>
-</html>
+    </footer
