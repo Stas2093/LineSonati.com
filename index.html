@@ -16,42 +16,35 @@
       font-family: 'Arial', sans-serif;
     }
 header {
-    <video autoplay loop muted>
-        <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
-        Ваш браузер не поддерживает этот видеоформат.
-    </video>
-    <div class="content">
-        <h1>LineSonati s.r.o.</h1>
-        <p>Reliable Transportation Solutions for Your Business</p>
-    </div>
-    </div>
+    position: relative;
+    height: 100vh; /* Высота на весь экран */
 }
 
 header video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Видео должно растягиваться, чтобы покрыть весь экран */
-  z-index: -1; /* Размещаем видео на заднем плане */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
+    z-index: -1; /* Размещаем видео на заднем плане */
 }
 
 header .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 3rem;
 }
 
 header .content h1 {
   font-size: 4em;
   font-weight: bold;
   margin-bottom: 20px;
-}
+
     }
 
     nav {
