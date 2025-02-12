@@ -13,9 +13,10 @@
 
         body {
             font-family: Arial, sans-serif;
+            margin-top: 50px; /* To offset the fixed navbar */
         }
 
-        /* Navigation bar styles */
+        /* Fixed Navigation Bar */
         nav {
             background-color: #333;
             color: white;
@@ -50,37 +51,46 @@
             border-radius: 5px;
         }
 
-  header {
-  position: relative;
-  height: 100vh;
-}
-
-header video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Отправим видео на задний план */
-}
-
-header .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-}
-
-header .content h1 {
-  font-size: 4em;
-  font-weight: bold;
-  margin-bottom: 20px;
+        /* Header with Video Background */
+        header {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            z-index: -1;
         }
 
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Make sure video stays behind text */
+        }
+
+        header .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        /* Main content sections */
         section {
             padding: 50px;
             background: #f9f9f9;
@@ -125,7 +135,7 @@ header .content h1 {
         </div>
     </nav>
 
-    <!-- Header section with background image and company name -->
+    <!-- Header with video -->
     <header>
         <video autoplay loop muted>
             <source src="143479-782374009_small.mp4" type="video/mp4">
