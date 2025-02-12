@@ -47,20 +47,38 @@
             margin-bottom: 20px;
         }
 
-        nav {
-            background-color: #264653;
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .services {
             display: flex;
-            justify-content: center;
-            padding: 15px;
+            justify-content: space-around;
+            margin-top: 50px;
         }
 
-        nav a {
+        .service {
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #264653;
             color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2rem;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
+        .contact-info {
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -76,11 +94,43 @@
     </div>
 </header>
 
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Our Services</a>
-    <a href="#contact">Contact</a>
-</nav>
+<section id="about">
+    <h2>About the Company</h2>
+    <p>LineSonati s.r.o. is a leader in the transportation services sector. We provide efficient and secure transport for all types of goods, ensuring timely delivery and high-quality service.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Freight Transport</h3>
+            <p>We provide reliable and fast delivery for all types of cargo across the region.</p>
+        </div>
+        <div class="service">
+            <h3>Equipment Transportation</h3>
+            <p>Our experts will safely transport any equipment and machinery with care.</p>
+        </div>
+        <div class="service">
+            <h3>Goods Delivery</h3>
+            <p>We ensure timely delivery of goods in excellent condition.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Address:</strong> Pracska 1881/14, Praha 10 Zabehlice, PSC 10600, Ceska Republika</p>
+        <p><strong>ICO:</strong> 19317760</p>
+        <p><strong>DIC:</strong> 19317760</p>
+        <p><strong>Email:</strong> <a href="mailto:s.ohnianykov@linesonati.com">s.ohnianykov@linesonati.com</a></p>
+        <p><strong>Phone:</strong> +420773883525</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 LineSonati s.r.o. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
