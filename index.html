@@ -50,13 +50,20 @@
             border-radius: 5px;
         }
 
-        /* Header section with background image */
         header {
             position: relative;
-            height: 100vh;
-            background: url('image.png') no-repeat center center/cover;
-            color: white;
-            padding-top: 70px; /* Adjusted padding for fixed navbar */
+            height: 50vh; /* Уменьшаем высоту видео на 50% */
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Видео растягивается по ширине */
+            height: 100%; /* Растягиваем видео по высоте */
+            object-fit: cover; /* Видео растягивается, чтобы покрыть весь экран */
+            z-index: -1; /* Размещаем видео на заднем плане */
         }
 
         header .content {
@@ -65,15 +72,14 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            color: white;
+            font-size: 2rem; /* Уменьшаем размер шрифта */
         }
 
-        header h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.5rem;
+        header .content h1 {
+            font-size: 3rem; /* Уменьшаем размер заголовка */
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
         section {
