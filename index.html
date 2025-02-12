@@ -15,11 +15,48 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Header section with background image */
         header {
             position: relative;
             height: 100vh;
-            background: url('image.png') no-repeat center center/cover; /* Фоновое изображение */
+            background: url('image.png') no-repeat center center/cover;
             color: white;
+            padding-top: 70px; /* Adjusted padding for fixed navbar */
         }
 
         header .content {
@@ -64,6 +101,25 @@
 </head>
 <body>
 
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#partners">Partners</a></li>
+        </ul>
+        <div>
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="ru">Русский</option>
+                <option value="cz">Čeština</option>
+            </select>
+        </div>
+    </nav>
+
     <!-- Header section with background image and company name -->
     <header>
         <div class="content">
@@ -102,10 +158,33 @@
         </div>
     </section>
 
+    <!-- Partners Section -->
+    <section id="partners">
+        <h2 class="section-title">Our Partners</h2>
+        <p>We collaborate with trusted logistics partners to ensure the best service for our clients.</p>
+    </section>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 LineSonati s.r.o. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById("languageSelect").value;
+            // Change the website content based on the selected language
+            if (language === 'en') {
+                alert('Language switched to English');
+                // You can implement actual language switching logic here
+            } else if (language === 'de') {
+                alert('Sprache auf Deutsch gewechselt');
+            } else if (language === 'ru') {
+                alert('Язык переключен на русский');
+            } else if (language === 'cz') {
+                alert('Jazyk změněn na češtinu');
+            }
+        }
+    </script>
 
 </body>
 </html>
