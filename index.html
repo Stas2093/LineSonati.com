@@ -319,9 +319,85 @@
 
 
 
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Phone: +420 123 456 789<br>Email: info@linesonati.cz</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('image.4.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            width: 40%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .contact-info {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: linear-gradient(45deg, #ff4b2b, #ff416c); /* Цвета сайта */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+        .contact-info a:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #d1402b, #d13b5c); /* Темнее при наведении */
+        }
+        .contact-info a i {
+            font-size: 20px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-box">
+            <h1>Свяжитесь с нами</h1>
+            <p>Свяжитесь с нами напрямую или заполните форму, чтобы получить бесплатную консультацию от нашей команды.</p>
+            <div class="contact-info">
+                <a href="tel:+420773833525"><i class="fas fa-phone"></i> +420 773 833 525</a>
+                <a href="mailto:info@linesonati.com"><i class="fas fa-envelope"></i> info@linesonati.com</a>
+            </div>
+            <p><strong>LineSonati S.R.O</strong><br>Адрес: Pracska 1881/14, Praha 10, PCS 106 00<br>Чехия</p>
+        </div>
     </div>
 </body>
 </html>
+
