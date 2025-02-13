@@ -11,11 +11,28 @@
             font-family: Arial, sans-serif;
             color: white;
         }
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 128, 0, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
         .header {
             position: relative;
             width: 100%;
             height: 300px;
             overflow: hidden;
+            margin-top: 50px;
         }
         .header video {
             position: absolute;
@@ -28,13 +45,15 @@
         }
         .header-text {
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            background: rgba(0, 128, 0, 0.8);
-            padding: 10px 20px;
+            background: rgba(0, 128, 0, 0.6);
+            padding: 20px 40px;
+            width: 80%;
+            text-align: center;
         }
         .content {
             text-align: center;
@@ -66,6 +85,18 @@
     </style>
 </head>
 <body>
+    <div class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        | 
+        <a href="#">EN</a> |
+        <a href="#">RU</a> |
+        <a href="#">CZ</a> |
+        <a href="#">DE</a>
+    </div>
+    
     <div class="header">
         <video autoplay muted loop>
             <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
