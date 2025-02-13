@@ -15,7 +15,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0);
             padding: 15px 0;
             text-align: center;
             z-index: 1000;
@@ -48,6 +48,7 @@
             align-items: center;
             gap: 8px;
             cursor: pointer;
+            font-size: 16px;
         }
         .dropdown img {
             width: 20px;
@@ -57,7 +58,7 @@
             display: none;
             position: absolute;
             background: rgba(0, 0, 0, 0.8);
-            min-width: 120px;
+            min-width: 100px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             text-align: left;
@@ -73,8 +74,9 @@
         }
         .header {
             position: relative;
-            width: 100%;
-            height: 350px;
+            width: 80%;
+            margin: auto;
+            height: 300px;
             overflow: hidden;
             margin-top: 50px;
         }
@@ -111,25 +113,31 @@
             width: 100%;
             bottom: 0;
         }
+        .section {
+            padding: 40px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="nav-bar">
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="dropdown">
             <div class="dropdown-toggle">
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> Language ▼
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> ▼
             </div>
             <div class="dropdown-content">
-                <a href="#">🇬🇧 English</a>
-                <a href="#">🇷🇺 Russian</a>
-                <a href="#">🇨🇿 Czech</a>
-                <a href="#">🇩🇪 German</a>
+                <a href="#">English</a>
+                <a href="#">Russian</a>
+                <a href="#">Czech</a>
+                <a href="#">German</a>
             </div>
         </div>
     </div>
@@ -142,10 +150,24 @@
         <div class="header-text">LineSonati s.r.o.</div>
     </div>
     
-    <div class="content">
-        <h1>Надёжные транспортные решения</h1>
-        <p>Мы предлагаем международные грузоперевозки по всей Европе.</p>
-        <a href="#contact" class="button">Свяжитесь с нами</a>
+    <div class="section" id="home">
+        <h2>Home</h2>
+        <p>Welcome to LineSonati s.r.o., your trusted transport partner.</p>
+    </div>
+
+    <div class="section" id="services">
+        <h2>Services</h2>
+        <p>We offer international freight transport, logistics, and container shipping.</p>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>LineSonati s.r.o. specializes in providing reliable transport and logistics solutions.</p>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Phone: +420 123 456 789<br>Email: info@linesonati.cz</p>
     </div>
 
     <div class="footer">© 2025 LineSonati s.r.o. Все права защищены.</div>
