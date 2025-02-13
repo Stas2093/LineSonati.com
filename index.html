@@ -16,21 +16,21 @@
             top: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.5); 
-            padding: 15px 0;
+            padding: 10px 0;
             text-align: center;
             z-index: 1000;
             display: flex;
             justify-content: space-between; 
             align-items: center;
-            padding: 10px 50px;
+            padding: 8px 40px;
             backdrop-filter: blur(10px);
         }
         .nav-bar a {
-            color: #f1f1f1;
+            color: black;
             text-decoration: none;
-            font-size: 22px;
-            font-weight: bold;
-            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 8px 12px;
             transition: 0.3s;
         }
         .nav-bar a:hover {
@@ -38,7 +38,12 @@
         }
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 15px;
+        }
+        .nav-links a:last-child {
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 8px 20px;
         }
         .dropdown {
             position: relative;
@@ -47,24 +52,24 @@
         .dropdown-toggle {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             cursor: pointer;
-            font-size: 18px;
-            color: #f1f1f1;
+            font-size: 14px;
+            color: black;
             transition: 0.3s;
         }
         .dropdown-toggle:hover {
             color: #32CD32;
         }
         .dropdown img {
-            width: 24px;
-            height: 18px;
+            width: 20px;
+            height: 15px;
         }
         .dropdown-content {
             display: none;
             position: absolute;
             background: rgba(0, 0, 0, 0.9);
-            min-width: 150px;
+            min-width: 130px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             text-align: left;
@@ -79,19 +84,6 @@
         @keyframes fadeIn {
             from {opacity: 0; transform: translateY(-10px);}
             to {opacity: 1; transform: translateY(0);}
-        }
-        .dropdown-content a {
-            color: white;
-            padding: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .dropdown-content a:hover {
-            background: rgba(50, 205, 50, 0.5);
         }
         .header {
             position: relative;
@@ -113,29 +105,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 56px;
-            font-weight: bold;
+            font-size: 48px;
+            font-weight: normal;
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
-        }
-        .content {
-            text-align: center;
-            padding: 50px 20px;
-            background: rgba(0, 0, 0, 0.6);
-        }
-        .footer {
-            background: rgba(0, 0, 0, 0.8);
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .section {
-            padding: 40px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.5);
-            margin: 20px;
         }
     </style>
 </head>
@@ -167,6 +140,9 @@
         </video>
         <div class="header-text">LineSonati s.r.o.</div>
     </div>
+</body>
+</html>
+
     
 <div class="services-section" id="services">
     <h2>Our Services</h2>
