@@ -15,22 +15,46 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 128, 0, 0.9);
+            background: rgba(0, 0, 0, 0.8);
             padding: 10px 0;
             text-align: center;
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
         .nav-bar a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
             font-size: 18px;
             font-weight: bold;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            min-width: 100px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-align: left;
         }
         .header {
             position: relative;
             width: 100%;
-            height: 300px;
+            height: 350px;
             overflow: hidden;
             margin-top: 50px;
         }
@@ -45,15 +69,14 @@
         }
         .header-text {
             position: absolute;
-            top: 60%;
+            top: 65%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 28px;
+            font-size: 48px;
             font-weight: bold;
-            background: rgba(0, 128, 0, 0.6);
-            padding: 20px 40px;
-            width: 80%;
+            width: 100%;
             text-align: center;
+            color: rgba(255, 255, 255, 0.7);
         }
         .content {
             text-align: center;
@@ -69,7 +92,7 @@
             border-radius: 5px;
         }
         .footer {
-            background: rgba(0, 128, 0, 0.8);
+            background: rgba(0, 0, 0, 0.8);
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -90,11 +113,15 @@
         <a href="#services">Services</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
-        | 
-        <a href="#">EN</a> |
-        <a href="#">RU</a> |
-        <a href="#">CZ</a> |
-        <a href="#">DE</a>
+        <div class="dropdown">
+            <a href="#">Language ▼</a>
+            <div class="dropdown-content">
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+                <a href="#">CZ</a>
+                <a href="#">DE</a>
+            </div>
+        </div>
     </div>
     
     <div class="header">
