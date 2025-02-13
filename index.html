@@ -50,30 +50,47 @@
             gap: 8px;
             cursor: pointer;
             font-size: 18px;
+            color: #f1f1f1;
+            transition: 0.3s;
+        }
+        .dropdown-toggle:hover {
+            color: #32CD32;
         }
         .dropdown img {
-            width: 22px;
-            height: 16px;
+            width: 24px;
+            height: 18px;
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            background: rgba(0, 0, 0, 0.8);
-            min-width: 120px;
+            background: rgba(0, 0, 0, 0.9);
+            min-width: 150px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             text-align: left;
             backdrop-filter: blur(10px);
+            border-radius: 5px;
         }
         .dropdown:hover .dropdown-content {
             display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-10px);}
+            to {opacity: 1; transform: translateY(0);}
         }
         .dropdown-content a {
             color: white;
             padding: 12px;
-            display: block;
-            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
             font-size: 18px;
+            transition: 0.3s;
+        }
+        .dropdown-content a:hover {
+            background: rgba(50, 205, 50, 0.5);
         }
         .header {
             position: relative;
@@ -131,13 +148,13 @@
         </div>
         <div class="dropdown">
             <div class="dropdown-toggle">
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> ▼
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> Language ▼
             </div>
             <div class="dropdown-content">
-                <a href="#">English</a>
-                <a href="#">Russian</a>
-                <a href="#">Czech</a>
-                <a href="#">German</a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> English</a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" alt="RU"> Russian</a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg" alt="CZ"> Czech</a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="DE"> German</a>
             </div>
         </div>
     </div>
