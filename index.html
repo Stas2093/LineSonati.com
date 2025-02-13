@@ -168,119 +168,94 @@
         <div class="header-text">LineSonati s.r.o.</div>
     </div>
     
-<div class="services-section" id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Support">
-            <h3>Support</h3>
-            <p>24/7 customer support for seamless communication and problem resolution.</p>
+<div class="about-us-section" id="about">
+    <div class="partners">
+        <h2 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 10px;">Our Partners</h2>
+        
+        <h2>OUR PARTNERS</h2>
+        <img src="image.2.jpg.jpg" alt="Partners Logos" style="width:100%; width: 100%; height: auto; max-height: 6cm; display: block; object-fit: cover; margin: 20px auto;">
+        
+    </div>
+    
+    <div class="about-container">
+        <div class="about-text">
+            <h2>ABOUT US</h2>
+            <p>LineSonati s.r.o. is a logistics company that provides freight transportation throughout Europe.</p>
+            <ul>
+                <li>We care about our customers and guarantee safe and timely delivery of goods.</li>
+                <li>Our fleet consists of trucks and vans, allowing us to offer customers the optimal transportation option.</li>
+                <li>We collaborate with first-class carriers who meet our company's strict policy.</li>
+                <li>Our team consists of professionals with extensive experience in this field. We constantly implement new technologies to optimize our work.</li>
+            </ul>
         </div>
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Availability">
-            <h3>Availability</h3>
-            <p>Flexible working hours to meet every client's needs efficiently.</p>
-        </div>
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/3094/3094838.png" alt="Risk-Free Transport">
-            <h3>Risk-Free Transport</h3>
-            <p>Secure transportation of goods with specialized handling and expertise.</p>
-        </div>
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png" alt="Tailored Transportation">
-            <h3>Tailored Transportation</h3>
-            <p>Customized transport solutions to fit the unique needs of each shipment.</p>
-        </div>
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/619/619153.png" alt="Safety and Protection">
-            <h3>Safety and Protection</h3>
-            <p>Comprehensive insurance and tracking for the safety of all shipments.</p>
-        </div>
-        <div class="service-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/1022/1022439.png" alt="Swift Assurance">
-            <h3>Swift Assurance</h3>
-            <p>Fast and efficient delivery with high-quality service standards.</p>
-        </div>
+        
     </div>
 </div>
 
 <style>
-    .services-section {
+    .about-us-section {
         text-align: center;
-        padding: 60px 20px;
-        background: #f5f5f5;
-    }
-    .services-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        max-width: 1200px;
-        margin: auto;
-    }
-    .service-box {
-        background: #fff;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    }
-    .service-box img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
-    }
-    .service-box h3 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        color: #222;
-    }
-    .service-box p {
-        color: #555;
-        font-size: 17px;
-    }
-</style>
-
-
-<style>
-    .services-section {
-        text-align: center;
-        padding: 50px 20px;
         background: #ffffff;
+        padding: 60px 20px;
     }
-    .services-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .partners {
+        background: none;
+        padding: 40px;
+        color: white;
+    }
+    .partner-logos {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .partner-logos img {
+        width: 120px;
+        height: auto;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 1200px;
         margin: auto;
+        gap: 40px;
+        padding-top: 50px;
     }
-    .service-box {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
+    .about-text {
+        max-width: 600px;
+        text-align: left;
     }
-    .service-box img {
-        width: 60px;
-        height: 60px;
+    .about-text h2 {
+        font-size: 28px;
+        color: #ff7b00;
         margin-bottom: 15px;
     }
-    .service-box h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
+    .about-text p, .about-text li {
         color: #333;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
-    .service-box p {
-        color: #666;
-        font-size: 16px;
+    .about-text ul {
+        list-style: none;
+        padding: 0;
+    }
+    .about-text ul li::before {
+        content: '\2714';
+        color: #ff7b00;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .about-image img {
+        width: 450px;
+        height: auto;
+        border-radius: 10px;
     }
 </style>
+
 
 
 <div class="about-us-section" id="about">
