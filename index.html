@@ -15,32 +15,52 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            gap: 20px;
+            padding: 10px 50px;
         }
         .nav-bar a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .nav-bar a:hover {
+            color: #32CD32;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
         }
         .dropdown {
             position: relative;
             display: inline-block;
         }
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .dropdown img {
+            width: 20px;
+            height: 15px;
+        }
         .dropdown-content {
             display: none;
             position: absolute;
-            background: rgba(0, 0, 0, 0.9);
-            min-width: 100px;
+            background: rgba(0, 0, 0, 0.8);
+            min-width: 120px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
+            text-align: left;
         }
         .dropdown:hover .dropdown-content {
             display: block;
@@ -83,14 +103,6 @@
             padding: 50px 20px;
             background: rgba(0, 0, 0, 0.6);
         }
-        .button {
-            background: green;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
         .footer {
             background: rgba(0, 0, 0, 0.8);
             text-align: center;
@@ -99,27 +111,25 @@
             width: 100%;
             bottom: 0;
         }
-        .section {
-            padding: 40px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.5);
-            margin: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="nav-bar">
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
         <div class="dropdown">
-            <a href="#">Language ▼</a>
+            <div class="dropdown-toggle">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> Language ▼
+            </div>
             <div class="dropdown-content">
-                <a href="#">EN</a>
-                <a href="#">RU</a>
-                <a href="#">CZ</a>
-                <a href="#">DE</a>
+                <a href="#">🇬🇧 English</a>
+                <a href="#">🇷🇺 Russian</a>
+                <a href="#">🇨🇿 Czech</a>
+                <a href="#">🇩🇪 German</a>
             </div>
         </div>
     </div>
@@ -136,31 +146,6 @@
         <h1>Надёжные транспортные решения</h1>
         <p>Мы предлагаем международные грузоперевозки по всей Европе.</p>
         <a href="#contact" class="button">Свяжитесь с нами</a>
-    </div>
-
-    <div class="section" id="about">
-        <h2>О нас</h2>
-        <p>Компания LineSonati s.r.o. специализируется на логистических и транспортных решениях для бизнеса.</p>
-    </div>
-
-    <div class="section" id="services">
-        <h2>Наши услуги</h2>
-        <p>- Международные грузоперевозки<br>- Логистика и складирование<br>- Перевозка контейнеров</p>
-    </div>
-
-    <div class="section" id="contact">
-        <h2>Контакты</h2>
-        <p>Телефон: +420 123 456 789<br>Email: info@linesonati.cz</p>
-        <iframe 
-            width="100%" 
-            height="300" 
-            frameborder="0" 
-            style="border:0" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Prague,Czech+Republic">
-        </iframe>
     </div>
 
     <div class="footer">© 2025 LineSonati s.r.o. Все права защищены.</div>
