@@ -266,27 +266,31 @@
 
 
 
-<section id="contact" style="background: url('image.76.jpg.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center;">
+<section id="contact" style="background: url('image.76.jpg.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; min-height: 600px;">
     <h2 style="color: #4CAF50; font-size: 2rem; margin-bottom: 20px;">Contact Us</h2>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 40px;">
         
         <!-- Contact Form -->
-        <form style="background: #333; padding: 20px; border-radius: 10px; width: 400px; display: flex; flex-direction: column; align-items: center;">
-            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
-            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
-            <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; height: 100px;"></textarea>
-            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
-        </form>
+        <div style="background: rgba(51, 51, 51, 0.5); padding: 20px; border-radius: 10px; width: 400px; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+            <form style="display: flex; flex-direction: column; flex-grow: 1;">
+                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; height: 100px;"></textarea>
+                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-top: auto;">Send Message</button>
+            </form>
+        </div>
 
         <!-- Contact Info -->
-        <div style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; width: 400px; text-align: left;">
-            <p><strong>LineSonati s.r.o.</strong></p>
-            <p><strong>ICO:</strong> 19317760</p>
-            <p><strong>DIC:</strong> CZ19317760</p>
-            <p><strong>Phone:</strong> +420 773 833 525</p>
-            <p><strong>Email:</strong> info@linesonati.com</p>
-            <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
+        <div style="background: rgba(51, 51, 51, 0.5); padding: 20px; border-radius: 10px; width: 400px; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <p><strong>LineSonati s.r.o.</strong></p>
+                <p><strong>ICO:</strong> 19317760</p>
+                <p><strong>DIC:</strong> CZ19317760</p>
+                <p><strong>Phone:</strong> +420 773 833 525</p>
+                <p><strong>Email:</strong> info@linesonati.com</p>
+                <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
+            </div>
 
             <!-- Google Map Embed -->
             <iframe 
@@ -298,5 +302,6 @@
                 loading="lazy">
             </iframe>
         </div>
+
     </div>
 </section>
