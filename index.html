@@ -147,55 +147,6 @@
     </div>
 </body>
 </html>
-<script>
-        // Объект с текстами на разных языках
-        const languageData = {
-            en: {
-                home: "LineSonati s.r.o.",
-                services: "Our Services",
-                about: "About Us",
-                aboutText: "At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.",
-                contact: "Contact Us"
-            },
-            ru: {
-                home: "LineSonati s.r.o.",
-                services: "Наши Услуги",
-                about: "О Нас",
-                aboutText: "В компании <strong>LineSonati s.r.o.</strong> мы не просто перевозим грузы — мы обеспечиваем <strong>эффективность, инновации и превосходство</strong> по всей Европе.",
-                contact: "Контакты"
-            },
-            cz: {
-                home: "LineSonati s.r.o.",
-                services: "Naše Služby",
-                about: "O Nás",
-                aboutText: "Ve společnosti <strong>LineSonati s.r.o.</strong> se nezabýváme jen dopravou — nabízíme <strong>efektivitu, inovace a vynikající výkon</strong> po celé Evropě.",
-                contact: "Kontakt"
-            },
-            de: {
-                home: "LineSonati s.r.o.",
-                services: "Unsere Dienstleistungen",
-                about: "Über Uns",
-                aboutText: "Bei <strong>LineSonati s.r.o.</strong> gehen wir über den Transport hinaus — wir bieten <strong>Effizienz, Innovation und Exzellenz</strong> in ganz Europa.",
-                contact: "Kontakt"
-            }
-        };
-
-        // Функция для смены языка
-        function changeLanguage(lang) {
-            const langContent = languageData[lang];
-
-            // Изменение текста на странице
-            document.getElementById('header-text').innerHTML = langContent.home;
-            document.querySelector('.service-header').innerHTML = langContent.services;
-            document.querySelector('.about-header').innerHTML = langContent.about;
-            document.querySelector('.about-text').innerHTML = langContent.aboutText;
-            document.querySelector('.contact-header').innerHTML = langContent.contact;
-        }
-    </script>
-</body>
-</html>
-
-
 
     
 <div class="services-section" id="services">
@@ -354,3 +305,51 @@
         </div>
     </div>
 </section>
+
+<script>
+        // Объект с текстами на разных языках
+        const languageData = {
+            en: {
+                home: "LineSonati s.r.o.",
+                services: "Our Services",
+                about: "About Us",
+                aboutText: "At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.",
+                contact: "Contact Us"
+            },
+            ru: {
+                home: "LineSonati s.r.o.",
+                services: "Наши Услуги",
+                about: "О Нас",
+                aboutText: "В компании <strong>LineSonati s.r.o.</strong> мы не просто перевозим грузы — мы обеспечиваем <strong>эффективность, инновации и превосходство</strong> по всей Европе.",
+                contact: "Контакты"
+            },
+            cz: {
+                home: "LineSonati s.r.o.",
+                services: "Naše Služby",
+                about: "O Nás",
+                aboutText: "Ve společnosti <strong>LineSonati s.r.o.</strong> se nezabýváme jen dopravou — nabízíme <strong>efektivitu, inovace a vynikající výkon</strong> po celé Evropě.",
+                contact: "Kontakt"
+            },
+            de: {
+                home: "LineSonati s.r.o.",
+                services: "Unsere Dienstleistungen",
+                about: "Über Uns",
+                aboutText: "Bei <strong>LineSonati s.r.o.</strong> gehen wir über den Transport hinaus — wir bieten <strong>Effizienz, Innovation und Exzellenz</strong> in ganz Europa.",
+                contact: "Kontakt"
+            }
+        };
+
+        // Функция для смены языка
+        function changeLanguage(lang) {
+            const langContent = languageData[lang];
+
+            // Изменение текста на странице
+            document.getElementById('header-text').innerHTML = langContent.home;
+            document.querySelector('.service-header').innerHTML = langContent.services;
+            document.querySelector('.about-header').innerHTML = langContent.about;
+            document.querySelector('.about-text').innerHTML = langContent.aboutText;
+            document.querySelector('.contact-header').innerHTML = langContent.contact;
+        }
+    </script>
+</body>
+</html>
