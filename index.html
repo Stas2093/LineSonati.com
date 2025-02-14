@@ -123,8 +123,8 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Общий фон для секций "Сервисы", "О нас" и "Контакты" */
-        .combined-section {
+        /* Единый фон для секций "Сервисы", "О нас" и "Контакты" */
+        .services-section, .about-section, .contact-section {
             background: url('/mnt/data/image.png') center/cover no-repeat;
             color: white;
             padding: 80px 20px;
@@ -175,22 +175,24 @@
         </div>
     </div>
 
-    <!-- Раздел "Сервисы", "О нас" и "Контакты" с единым фоном -->
-    <div class="combined-section" id="services">
+    <!-- Раздел "Сервисы" с единым фоном -->
+    <div class="services-section" id="services">
         <h2 class="service-header">Our Services</h2>
         <div class="services-container">
             <!-- Сервисы -->
         </div>
     </div>
 
-    <div class="combined-section" id="about">
+    <!-- Раздел "О нас" с единым фоном -->
+    <div class="about-section" id="about">
         <h2 class="about-header">About Us</h2>
         <p class="about-text">
             At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.
         </p>
     </div>
 
-    <div class="combined-section" id="contact">
+    <!-- Раздел "Контакты" с единым фоном -->
+    <div class="contact-section" id="contact">
         <h2 class="contact-header">Contact Us</h2>
         <div class="contact-container">
             <!-- Контактная информация -->
@@ -244,6 +246,7 @@
     </script>
 </body>
 </html>
+
 
 
 
