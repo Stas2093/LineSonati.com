@@ -10,10 +10,9 @@
             padding: 0;
             font-family: 'Arial', sans-serif;
             color: white;
-     
         }
 
-        /* Навигационная панель */
+        /* Стили для навигационной панели */
         .nav-bar {
             position: fixed;
             top: 0;
@@ -95,6 +94,7 @@
             to {opacity: 1; transform: translateY(0);}
         }
 
+        /* Секция с видео в шапке */
         .header {
             position: relative;
             width: 100%;
@@ -123,11 +123,12 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        .divider {
-            border: 0;
-            height: 1px;
-            background: #32CD32;
-            margin: 30px 0;
+        /* Общий фон для секций "Сервисы" и "О нас" */
+        .services-section, .about-section, .contact-section {
+            background: url('image.4.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
         }
 
         /* Языковой переключатель */
@@ -182,14 +183,20 @@
         </div>
     </div>
 
-    <div class="divider"></div>
-
     <!-- Раздел "О нас" с единым фоном -->
     <div class="about-section" id="about">
         <h2 class="about-header">About Us</h2>
         <p class="about-text">
             At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.
         </p>
+    </div>
+
+    <!-- Раздел "Контакты" -->
+    <div class="contact-section" id="contact">
+        <h2 class="contact-header">Contact Us</h2>
+        <div class="contact-container">
+            <!-- Контактная информация -->
+        </div>
     </div>
 
     <script>
@@ -199,25 +206,29 @@
                 home: "LineSonati s.r.o.",
                 services: "Our Services",
                 about: "About Us",
-                aboutText: "At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe."
+                aboutText: "At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.",
+                contact: "Contact Us"
             },
             ru: {
                 home: "LineSonati s.r.o.",
                 services: "Наши Услуги",
                 about: "О Нас",
-                aboutText: "В компании <strong>LineSonati s.r.o.</strong> мы не просто перевозим грузы — мы обеспечиваем <strong>эффективность, инновации и превосходство</strong> по всей Европе."
+                aboutText: "В компании <strong>LineSonati s.r.o.</strong> мы не просто перевозим грузы — мы обеспечиваем <strong>эффективность, инновации и превосходство</strong> по всей Европе.",
+                contact: "Контакты"
             },
             cz: {
                 home: "LineSonati s.r.o.",
                 services: "Naše Služby",
                 about: "O Nás",
-                aboutText: "Ve společnosti <strong>LineSonati s.r.o.</strong> se nezabýváme jen dopravou — nabízíme <strong>efektivitu, inovace a vynikající výkon</strong> po celé Evropě."
+                aboutText: "Ve společnosti <strong>LineSonati s.r.o.</strong> se nezabýváme jen dopravou — nabízíme <strong>efektivitu, inovace a vynikající výkon</strong> po celé Evropě.",
+                contact: "Kontakt"
             },
             de: {
                 home: "LineSonati s.r.o.",
                 services: "Unsere Dienstleistungen",
                 about: "Über Uns",
-                aboutText: "Bei <strong>LineSonati s.r.o.</strong> gehen wir über den Transport hinaus — wir bieten <strong>Effizienz, Innovation und Exzellenz</strong> in ganz Europa."
+                aboutText: "Bei <strong>LineSonati s.r.o.</strong> gehen wir über den Transport hinaus — wir bieten <strong>Effizienz, Innovation und Exzellenz</strong> in ganz Europa.",
+                contact: "Kontakt"
             }
         };
 
@@ -230,10 +241,12 @@
             document.querySelector('.service-header').innerHTML = langContent.services;
             document.querySelector('.about-header').innerHTML = langContent.about;
             document.querySelector('.about-text').innerHTML = langContent.aboutText;
+            document.querySelector('.contact-header').innerHTML = langContent.contact;
         }
     </script>
 </body>
 </html>
+
 
 
 
