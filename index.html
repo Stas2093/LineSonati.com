@@ -177,9 +177,6 @@
 
     <!-- Раздел "Сервисы" с единым фоном -->
     <div class="services-section" id="services">
-        <h2 class="service-header">Our Services</h2>
-        <div class="services-container">
-            <div class="services-section" id="services">
     <h2>Our Services</h2>
     <div class="services-container">
         <div class="service-box">
@@ -216,6 +213,46 @@
 </div>
 
 <style>
+    .services-section {
+        text-align: center;
+        padding: 60px 20px;
+        background: url('image.4.jpg') no-repeat center center/cover;
+    }
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .service-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .service-box img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .service-box h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #222;
+    }
+    .service-box p {
+        color: #555;
+        font-size: 17px;
+    }
+</style>
+
     .services-section {
         text-align: center;
         padding: 60px 20px;
