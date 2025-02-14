@@ -258,6 +258,12 @@
 
             // Изменение заголовка страницы
             document.title = langContent.home;
+
+            // Изменение текста в навигации
+            document.querySelector('.home').innerHTML = langContent.home;
+            document.querySelector('.services').innerHTML = langContent.services;
+            document.querySelector('.about').innerHTML = langContent.about;
+            document.querySelector('.contact').innerHTML = langContent.contact;
         }
     </script>
 </body>
