@@ -228,14 +228,14 @@
 
 
 <!-- About Us Section -->
-<section id="about" style="background: url('image.76.jpg.jpg') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; position: relative;">
-   
-        
-        
+<section id="about" style="background: url('https://source.unsplash.com/1600x900/?logistics,freight') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; position: relative;">
+    <div style="background: rgba(0, 0, 0, 0.0); padding: 60px 20px; border-radius: 10px;">
+        <h2 style="color: #4CAF50; font-size: 2.5rem; margin-bottom: 20px;">About Us</h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8;">
             At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe. With a wealth of experience in logistics, we craft seamless, reliable transport solutions customized for your business growth.
         </p>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px;">
-            <div style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left;">
+            <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
                 <h3 style="color: #4CAF50;">Why Choose Us?</h3>
                 <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
                     <li> <strong>Reliable & On-Time Deliveries</strong> – Timely, secure, and efficient transport services.</li>
@@ -244,7 +244,7 @@
                     <li> <strong>Eco-Friendly Approach</strong> – Sustainable logistics with fuel-efficient transport routes.</li>
                 </ul>
             </div>
-            <div style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left;">
+            <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
                 <h3 style="color: #4CAF50;">Our Mission</h3>
                 <p style="font-size: 1.1rem;">
                     We drive logistics forward with <strong>cutting-edge technology, precision, and customer satisfaction</strong>. From express freight to temperature-controlled transport, LineSonati s.r.o. is your trusted logistics partner.
@@ -256,6 +256,12 @@
         </div>
     </div>
 </section>
+
+<style>
+.floating-card:hover {
+    transform: translateY(-10px);
+}
+</style>
 
 
 
