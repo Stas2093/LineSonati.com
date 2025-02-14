@@ -123,8 +123,8 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Общий фон для секций "Сервисы" и "О нас" */
-        .services-section, .about-section, .contact-section {
+        /* Общий фон для секций "Сервисы", "О нас" и "Контакты" */
+        .section {
             background: url('image.4.jpg') center/cover no-repeat;
             color: white;
             padding: 80px 20px;
@@ -145,6 +145,7 @@
     </style>
 </head>
 <body>
+
     <div class="nav-bar">
         <div class="nav-links">
             <a href="#home" class="home">Home</a>
@@ -176,7 +177,88 @@
     </div>
 
     <!-- Раздел "Сервисы" с единым фоном -->
-    <div class="services-section" id="services">
+    <div class="section" id="services">
         <h2 class="service-header">Our Services</h2>
         <div class="services-container">
-            <!-- Серв
+            <!-- Сервисы -->
+        </div>
+    </div>
+
+    <!-- Раздел "О нас" с единым фоном -->
+    <div class="section" id="about">
+        <h2 class="about-header">About Us</h2>
+        <p class="about-text">
+            At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.
+        </p>
+    </div>
+
+    <!-- Раздел "Контакты" -->
+    <div class="section" id="contact">
+        <h2 class="contact-header">Contact Us</h2>
+        <div class="contact-container">
+            <!-- Контактная информация -->
+        </div>
+    </div>
+
+    <script>
+        // Объект с текстами на разных языках
+        const languageData = {
+            en: {
+                home: "LineSonati s.r.o.",
+                services: "Our Services",
+                about: "About Us",
+                aboutText: "At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe.",
+                contact: "Contact Us",
+                flag: 'https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg',
+                country: 'United States'
+            },
+            ru: {
+                home: "LineSonati s.r.o.",
+                services: "Наши Услуги",
+                about: "О Нас",
+                aboutText: "В компании <strong>LineSonati s.r.o.</strong> мы не просто перевозим грузы — мы обеспечиваем <strong>эффективность, инновации и превосходство</strong> по всей Европе.",
+                contact: "Контакты",
+                flag: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
+                country: 'Russia'
+            },
+            cz: {
+                home: "LineSonati s.r.o.",
+                services: "Naše Služby",
+                about: "O Nás",
+                aboutText: "Ve společnosti <strong>LineSonati s.r.o.</strong> se nezabýváme jen dopravou — nabízíme <strong>efektivitu, inovace a vynikající výkon</strong> po celé Evropě.",
+                contact: "Kontakt",
+                flag: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg',
+                country: 'Czech Republic'
+            },
+            de: {
+                home: "LineSonati s.r.o.",
+                services: "Unsere Dienstleistungen",
+                about: "Über Uns",
+                aboutText: "Bei <strong>LineSonati s.r.o.</strong> gehen wir über den Transport hinaus — wir bieten <strong>Effizienz, Innovation und Exzellenz</strong> in ganz Europa.",
+                contact: "Kontakt",
+                flag: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',
+                country: 'Germany'
+            }
+        };
+
+        // Функция для смены языка
+        function changeLanguage(lang, country, flagUrl) {
+            const langContent = languageData[lang];
+
+            // Изменение текста на странице
+            document.getElementById('header-text').innerHTML = langContent.home;
+            document.querySelector('.service-header').innerHTML = langContent.services;
+            document.querySelector('.about-header').innerHTML = langContent.about;
+            document.querySelector('.about-text').innerHTML = langContent.aboutText;
+            document.querySelector('.contact-header').innerHTML = langContent.contact;
+
+            // Изменение флага и названия языка в выпадающем меню
+            document.querySelector('.dropdown-toggle img').src = langContent.flag;
+            document.querySelector('.dropdown-toggle').innerHTML = country + " ▼";
+
+            // Изменение заголовка страницы
+            document.title = langContent.home;
+        }
+    </script>
+</body>
+</html>
