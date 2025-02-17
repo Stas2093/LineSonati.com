@@ -154,6 +154,8 @@
             position: relative;
             border-radius: 15px; /* Устанавливаем округленные углы */
             overflow: hidden; /* Чтобы контент не выходил за рамки округленных углов */
+            justify-content: space-between; /* Разделение на левую и правую части */
+            align-items: flex-start; /* Выравнивание элементов по верхнему краю */
         }
 
         .about-contact-section .floating-card {
@@ -171,13 +173,14 @@
         }
 
         .contact-form {
-              margin-top: 20px;
+              max-width: 400px;
               max-width: 400px;
               background: rgba(255, 255, 255, 0.2);
               padding: 20px;
-             border-radius: 15px; /* Убираем прямые углы и добавляем округление */
-             margin-left: auto;
-             margin-right: auto;
+              border-radius: 10px; /* Убираем прямые углы и добавляем округление */
+              margin-left: auto;
+              margin-right: 20px; /* Отступ с правой стороны */
+              text-align: center; /* Центрируем текст */
         }
 
         .contact-form input,
@@ -187,6 +190,7 @@
             margin-bottom: 15px;
             border-radius: 5px;
             border: none;
+            text-align: left; /* Выравниваем текст в полях по левому краю */
         }
 
         .contact-form button {
@@ -321,9 +325,10 @@
         <hr>
 
         <!-- Контактная информация -->
-       <section class="about-contact-section" id="contact">
-    <div class="contact-form">
-        <h3>Contact Us</h3>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <!-- Контактная форма -->
+        <div class="contact-form">
+            <h3>Contact Us</h3>
             <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
@@ -339,6 +344,7 @@
             <p><strong>Phone:</strong> +420 773 833 525</p>
             <p><strong>Email:</strong> info@linesonati.com</p>
             <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
+            <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=Práčská+1881%2F14%2C+106+00+Praha+10-Záběhlice" target="_blank">Práčská 1881/14, 106 00 Praha 10-Záběhlice</a></p>
         </div>
     </section>
 </body>
