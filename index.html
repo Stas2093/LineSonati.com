@@ -45,47 +45,6 @@
             border-radius: 25px;
             padding: 8px 20px;
         }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            margin-right: 50px;
-        }
-        .dropdown-toggle {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            color: black;
-            transition: 0.3s;
-        }
-        .dropdown-toggle:hover {
-            color: #32CD32;
-        }
-        .dropdown img {
-            width: 20px;
-            height: 15px;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.9);
-            min-width: 130px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            text-align: left;
-            backdrop-filter: blur(10px);
-            border-radius: 5px;
-            right: 0;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-            animation: fadeIn 0.3s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(-10px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
         .header {
             position: relative;
             width: 100%;
@@ -121,17 +80,6 @@
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="dropdown">
-            <div class="dropdown-toggle">
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> Language ▼
-            </div>
-            <div class="dropdown-content">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> English</a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" alt="RU"> Russian</a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg" alt="CZ"> Czech</a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="DE"> German</a>
-            </div>
-        </div>
     </div>
     
     <div class="header" id="home">
@@ -139,171 +87,157 @@
             <source src="143479-782374009_small.mp4.mp4" type="video/mp4">
             Ваш браузер не поддерживает видео.
         </video>
-        <div class="header-text" style="font-size: 4rem; font-family: 'Arial', sans-serif; font-weight: bold;">
-    LineSonati s.r.o.
-</div>
-
-</div>
+        <div class="header-text">LineSonati s.r.o.</div>
     </div>
-</body>
-</html>
-
-
-
     
-<div class="services-section" id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-        <div class="service-box">
-          <img src="images/foto.1.jpg" alt="Support" width="100" height="100">
-            <h3>Support</h3>
-            <p>24/7 customer support for seamless communication and problem resolution.</p>
-        </div>
-        <div class="service-box">
-     <img src="images/foto.2.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
-            <h3>Availability</h3>
-            <p>Flexible working hours to meet every client's needs efficiently.</p>
-        </div>
-        <div class="service-box">
-           <img src="images/foto.3.jpg" alt="Support" style="max-width: 100px; max-height: 100px;">
-            <h3>Risk-Free Transport</h3>
-            <p>Secure transportation of goods with specialized handling and expertise.</p>
-        </div>
-        <div class="service-box">
-        <img src="images/foto.4.png" alt="Tailored Transportation" width="80" height="80">
-            <h3>Tailored Transportation</h3>
-            <p>Customized transport solutions to fit the unique needs of each shipment.</p>
-        </div>
-        <div class="service-box">
-          <img src="images/foto.5.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
-            <h3>Safety and Protection</h3>
-            <p>Comprehensive insurance and tracking for the safety of all shipments.</p>
-        </div>
-        <div class="service-box">
-           <img src="images/foto.6.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
-            <h3>Swift Assurance</h3>
-            <p>Fast and efficient delivery with high-quality service standards.</p>
-        </div>
-    </div>
-</div>
-
-<style>
-    .services-section {
-        text-align: center;
-        padding: 60px 20px;
-        background: url('image.4.jpg') no-repeat center center/cover;
-    }
-    .services-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        max-width: 1200px;
-        margin: auto;
-    }
-    .service-box {
-        background: #fff;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    }
-    .service-box img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
-    }
-    .service-box h3 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        color: #222;
-    }
-    .service-box p {
-        color: #555;
-        font-size: 17px;
-    }
-</style>
-
-
-
-<!-- About Us Section -->
-<section id="about" style="background: url('image.4.jpg') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; position: relative;">
-    <div style="background: rgba(0, 0, 0, 0.0); padding: 60px 20px; border-radius: 10px;">
-        <h2 style="color: #4CAF50; font-size: 2.5rem; margin-bottom: 20px;">About Us</h2>
-        <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8;">
-            At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe. With a wealth of experience in logistics, we craft seamless, reliable transport solutions customized for your business growth.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px;">
-            <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
-                <h3 style="color: #4CAF50;">Why Choose Us?</h3>
-                <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-                    <li>  <strong>Reliable & On-Time Deliveries</strong> – Timely, secure, and efficient transport services.</li>
-                    <li>  <strong>Europe-Wide Coverage</strong> – Seamless business connectivity across the continent.</li>
-                    <li>  <strong>Safety & Compliance</strong> – Strict adherence to industry regulations and best practices.</li>
-                    <li>  <strong>Eco-Friendly Approach</strong> – Sustainable logistics with fuel-efficient transport routes.</li>
-                </ul>
+    <div class="services-section" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <img src="images/foto.1.jpg" alt="Support" width="100" height="100">
+                <h3>Support</h3>
+                <p>24/7 customer support for seamless communication and problem resolution.</p>
             </div>
-            <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
-                <h3 style="color: #4CAF50;">Our Mission</h3>
-                <p style="font-size: 1.1rem;">
-                    We drive logistics forward with <strong>cutting-edge technology, precision, and customer satisfaction</strong>. From express freight to temperature-controlled transport, LineSonati s.r.o. is your trusted logistics partner.
-                </p>
-                <p style="font-size: 1.1rem;">
-                    Our mission is to enhance global connectivity by providing <strong>customized logistics solutions</strong> that cater to businesses of all sizes. Whether you require urgent deliveries or large-scale freight handling, we guarantee efficiency and reliability at every step.
-                </p>
+            <div class="service-box">
+                <img src="images/foto.2.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
+                <h3>Availability</h3>
+                <p>Flexible working hours to meet every client's needs efficiently.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/foto.3.jpg" alt="Support" style="max-width: 100px; max-height: 100px;">
+                <h3>Risk-Free Transport</h3>
+                <p>Secure transportation of goods with specialized handling and expertise.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/foto.4.png" alt="Tailored Transportation" width="80" height="80">
+                <h3>Tailored Transportation</h3>
+                <p>Customized transport solutions to fit the unique needs of each shipment.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/foto.5.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
+                <h3>Safety and Protection</h3>
+                <p>Comprehensive insurance and tracking for the safety of all shipments.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/foto.6.jpg" alt="Support" style="max-width: 150px; max-height: 150px;">
+                <h3>Swift Assurance</h3>
+                <p>Fast and efficient delivery with high-quality service standards.</p>
             </div>
         </div>
     </div>
-</section>
 
-<style>
-.floating-card:hover {
-    transform: translateY(-10px);
-}
-</style>
+    <style>
+        .services-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('image.4.jpg') no-repeat center center/cover;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .service-box img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+        .service-box h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .service-box p {
+            color: #555;
+            font-size: 17px;
+        }
+    </style>
 
+    <!-- About Us Section -->
+    <section id="about" style="background: url('image.76.jpg.jpg') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; position: relative;">
+        <div style="background: rgba(0, 0, 0, 0.0); padding: 60px 20px; border-radius: 10px;">
+            <h2 style="color: #4CAF50; font-size: 2.5rem; margin-bottom: 20px;">About Us</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8;">
+                At <strong>LineSonati s.r.o.</strong>, we go beyond transportation—we deliver <strong>efficiency, innovation, and excellence</strong> across Europe. With a wealth of experience in logistics, we craft seamless, reliable transport solutions customized for your business growth.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px;">
+                <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
+                    <h3 style="color: #4CAF50;">Why Choose Us?</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+                        <li> <strong>Reliable & On-Time Deliveries</strong> – Timely, secure, and efficient transport services.</li>
+                        <li> <strong>Europe-Wide Coverage</strong> – Seamless business connectivity across the continent.</li>
+                        <li> <strong>Safety & Compliance</strong> – Strict adherence to industry regulations and best practices.</li>
+                        <li> <strong>Eco-Friendly Approach</strong> – Sustainable logistics with fuel-efficient transport routes.</li>
+                    </ul>
+                </div>
+                <div class="floating-card" style="max-width: 350px; background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; text-align: left; transition: transform 0.3s ease-in-out;">
+                    <h3 style="color: #4CAF50;">Our Mission</h3>
+                    <p style="font-size: 1.1rem;">
+                        We drive logistics forward with <strong>cutting-edge technology, precision, and customer satisfaction</strong>. From express freight to temperature-controlled transport, LineSonati s.r.o. is your trusted logistics partner.
+                    </p>
+                    <p style="font-size: 1.1rem;">
+                        Our mission is to enhance global connectivity by providing <strong>customized logistics solutions</strong> that cater to businesses of all sizes. Whether you require urgent deliveries or large-scale freight handling, we guarantee efficiency and reliability at every step.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <style>
+    .floating-card:hover {
+        transform: translateY(-10px);
+    }
+    </style>
 
-
-<section id="contact" style="background: url('image.76.jpg.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; min-height: 600px;">
-    <h2 style="color: #4CAF50; font-size: 2rem; margin-bottom: 20px;">Contact Us</h2>
-
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 40px;">
+    <section id="contact" style="background-color: #212121; color: white; padding: 60px 20px; text-align: center;">
+        <h2 style="color: #4CAF50; font-size: 2rem; margin-bottom: 20px;">Contact Us</h2>
         
-        <!-- Contact Form -->
-        <div style="background: rgba(51, 51, 51, 0.65); padding: 20px; border-radius: 10px; width: 400px; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
-            <form style="display: flex; flex-direction: column; gap: 10px; width: 100%; box-sizing: border-box; flex-grow: 1;">
-                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; border-radius: 5px; border: none; box-sizing: border-box;">
-                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; border-radius: 5px; border: none; box-sizing: border-box;">
-                <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; border-radius: 5px; border: none; height: 100px; box-sizing: border-box;"></textarea>
-                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; width: 100%; box-sizing: border-box;">Send Message</button>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+            
+            <!-- Contact Form -->
+            <form style="background: #333; padding: 20px; border-radius: 10px; width: 400px;">
+                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; height: 100px;"></textarea>
+                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
             </form>
-        </div>
+            
+            <!-- Contact Info -->
+            <div style="text-align: left; max-width: 300px;">
+                <p><strong></strong> LineSonati s.r.o.</p>
 
-        <!-- Contact Info -->
-        <div style="background: rgba(51, 51, 51, 0.65); padding: 20px; border-radius: 10px; width: 400px; min-height: 350px; display: flex; flex-direction: column; justify-content: space-between; text-align: left; box-sizing: border-box;">
-            <div>
-                <p><strong>LineSonati s.r.o.</strong></p>
-                <p><strong>ICO:</strong> 19317760</p>
-                <p><strong>DIC:</strong> CZ19317760</p>
+                <p><strong></strong>ICO : 19317760</p>
+                <p><strong></strong>DIC : CZ19317760</p>
                 <p><strong>Phone:</strong> +420 773 833 525</p>
                 <p><strong>Email:</strong> info@linesonati.com</p>
                 <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
-            </div>
 
-            <!-- Google Map Embed -->
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.269324306514!2d14.508496977010305!3d50.04787367158308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b928154a80bbf%3A0x80d01392cc9d76d6!2sPr%C3%A1%C4%8Dsk%C3%A1%201881%2F14%2C%20106%2000%20Praha%2010-Z%C3%A1b%C4%9Bhlice%2C%20Czechia!5e0!3m2!1sen!2scz!4v1707912334567!5m2!1sen!2scz" 
-                width="100%" 
-                height="200" 
-                style="border:0; border-radius: 10px;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+                <!-- Google Map Embed -->
+
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.269324306514!2d14.508496977010305!3d50.04787367158308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b928154a80bbf%3A0x80d01392cc9d76d6!2sPr%C3%A1%C4%8Dsk%C3%A1%201881%2F14%2C%20106%2000%20Praha%2010-Z%C3%A1b%C4%9Bhlice%2C%20Czechia!5e0!3m2!1sen!2scz!4v1707912334567!5m2!1sen!2scz" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</body>
+</html>
