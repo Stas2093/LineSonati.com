@@ -148,14 +148,15 @@
 
         .about-contact-section {
             background: url('image.5.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
             color: white;
-            padding: 60px 20px;
             text-align: center;
             position: relative;
             border-radius: 15px; /* Устанавливаем округленные углы */
             overflow: hidden; /* Чтобы контент не выходил за рамки округленных углов */
-            justify-content: space-between; /* Разделение на левую и правую части */
-            align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+           
         }
 
         .about-contact-section .floating-card {
@@ -179,7 +180,7 @@
               padding: 20px;
               border-radius: 10px; /* Убираем прямые углы и добавляем округление */
               margin-left: auto;
-              margin-right: 20px; /* Отступ с правой стороны */
+              margin-right: auto;
               text-align: center; /* Центрируем текст */
         }
 
@@ -204,9 +205,9 @@
         }
 
        .contact-info {
-        max-width: 400px;
+        max-width: 450px;
         text-align: left;
-        margin: auto;
+        margin-right: 20px; /* Расположение над контактной информацией */
         border-radius: 15px; /* Округляем углы для блока с контактной информацией */
         }
 
@@ -337,15 +338,21 @@
             </form>
         </div>
 
-        <div class="contact-info">
-            <p><strong>LineSonati s.r.o.</strong></p>
-            <p><strong>ICO :</strong> 19317760</p>
-            <p><strong>DIC :</strong> CZ19317760</p>
-            <p><strong>Phone:</strong> +420 773 833 525</p>
-            <p><strong>Email:</strong> info@linesonati.com</p>
-            <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
-            <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=Práčská+1881%2F14%2C+106+00+Praha+10-Záběhlice" target="_blank">Práčská 1881/14, 106 00 Praha 10-Záběhlice</a></p>
-        </div>
-    </section>
+   <section class="about-contact-section" id="about">
+    <!-- Левый блок с контактной информацией -->
+    <div class="contact-info">
+        <p><strong>LineSonati s.r.o.</strong></p>
+        <p><strong>ICO :</strong> 19317760</p>
+        <p><strong>DIC :</strong> CZ19317760</p>
+        <p><strong>Phone:</strong> +420 773 833 525</p>
+        <p><strong>Email:</strong> info@linesonati.com</p>
+        <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=Práčská+1881%2F14%2C+106+00+Praha+10-Záběhlice" target="_blank">Práčská 1881/14, 106 00 Praha 10-Záběhlice</a></p>
+    </div>
+
+    <!-- Правая часть с картой -->
+    <div class="contact-info">
+        <iframe src="https://www.google.com/maps?q=Práčská+1881%2F14%2C+106+00+Praha+10-Záběhlice" width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
 </body>
 </html>
