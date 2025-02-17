@@ -146,9 +146,19 @@
             transform: translateY(-10px);
         }
 
+        /* Центрирование формы и контактной информации */
         .about-contact-section .contact-form,
         .about-contact-section .contact-info {
-            width: 400px;
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Полупрозрачная разделительная линия */
+        .about-contact-section hr {
+            width: 80%;
+            margin: 40px auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
     </style>
@@ -227,34 +237,4 @@
                 <div class="floating-card">
                     <h3 style="color: #4CAF50;">Our Mission</h3>
                     <p style="font-size: 1.1rem;">
-                        We drive logistics forward with <strong>cutting-edge technology, precision, and customer satisfaction</strong>. From express freight to temperature-controlled transport, LineSonati s.r.o. is your trusted logistics partner.
-                    </p>
-                    <p style="font-size: 1.1rem;">
-                        Our mission is to enhance global connectivity by providing <strong>customized logistics solutions</strong> that cater to businesses of all sizes. Whether you require urgent deliveries or large-scale freight handling, we guarantee efficiency and reliability at every step.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Контактная информация -->
-        <div class="contact-form">
-            <h3>Contact Us</h3>
-            <form>
-                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
-                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
-                <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; height: 100px;"></textarea>
-                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
-            </form>
-        </div>
-
-        <div class="contact-info">
-            <p><strong>LineSonati s.r.o.</strong></p>
-            <p><strong>ICO :</strong> 19317760</p>
-            <p><strong>DIC :</strong> CZ19317760</p>
-            <p><strong>Phone:</strong> +420 773 833 525</p>
-            <p><strong>Email:</strong> info@linesonati.com</p>
-            <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
-        </div>
-    </section>
-</body>
-</html>
+                        We drive logistics forward with <strong>cutting-edge technology, precision, and customer satisfaction</strong>. From express freight to temperature-controlled transport, 
