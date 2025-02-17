@@ -40,6 +40,33 @@
             color: #32CD32;
         }
 
+        .partners-section {
+            background-color: white; /* Белый фон */
+            text-align: center;
+            padding: 40px;
+            color: black;
+            margin-top: 40px;
+        }
+
+        .partners-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .partners-logos img {
+            max-width: 100px; /* Уменьшаем логотипы */
+            margin-bottom: 20px;
+        }
+
         .header {
             position: relative;
             width: 100%;
@@ -66,40 +93,6 @@
             font-weight: normal;
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Секция "Наши партнеры" */
-        .partners-section {
-            text-align: center;
-            padding: 40px;
-            color: white;
-            margin-top: 40px;
-            background: url('image.66.jpg') no-repeat center center/cover;
-            position: relative;
-        }
-
-        .partners-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-        }
-
-        .partners-section .partners-logos {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .partners-section .partners-logos img {
-            max-width: 90px; /* Уменьшаем логотипы, чтобы все вмещались */
-            margin-bottom: 20px;
         }
 
         /* Раздел "Сервисы" */
@@ -250,6 +243,7 @@
             <img src="path/to/logo2.png" alt="Partner 2">
             <img src="path/to/logo3.png" alt="Partner 3">
             <img src="path/to/logo4.png" alt="Partner 4">
+            <!-- Добавьте остальные логотипы по мере необходимости -->
         </div>
     </div>
 
