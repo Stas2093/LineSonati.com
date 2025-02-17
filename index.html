@@ -147,11 +147,13 @@
         }
 
         .about-contact-section {
-            background: url('image.5.jpg') center/cover no-repeat;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
+          background: url('image.5.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 15px; /* Устанавливаем округленные углы */
+    overflow: hidden; /* Чтобы контент не выходил за рамки округленных углов */
         }
 
         .about-contact-section .floating-card {
@@ -169,13 +171,13 @@
         }
 
         .contact-form {
-            margin-top: 20px;
-            max-width: 400px;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            margin-left: auto;
-            margin-right: auto;
+   margin-top: 20px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px; /* Округление углов у формы */
+    margin-left: auto;
+    margin-right: auto;
         }
 
         .contact-form input,
@@ -198,9 +200,10 @@
         }
 
         .contact-info {
-            max-width: 400px;
-            text-align: left;
-            margin: auto;
+      max-width: 400px;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px; /* Округление углов у контактной информации */
         }
 
         .contact-info iframe {
