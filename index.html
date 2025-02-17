@@ -425,9 +425,10 @@ input, textarea {
         </form>
     </div>
 
-    <div class="contact-info-and-map" style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; display: flex; gap: 10px; padding: 20px;">
-        <!-- Контактная информация (над картой) -->
-        <div class="contact-info" style="background: rgba(51, 51, 51, var(--opacity, 0.8)); padding: 20px; border-radius: 10px; color: white; flex: 1; height: 300px; transition: background 0.3s ease;">
+    <!-- Контейнер для контактной информации и карты -->
+    <div class="contact-info-and-map" style="position: fixed; left: 0; top: 20px; width: 300px; z-index: 10; padding: 10px;">
+        <!-- Контактная информация (сверху) -->
+        <div class="contact-info" style="background: rgba(51, 51, 51, var(--opacity, 0.8)); padding: 20px; border-radius: 10px; color: white; margin-bottom: 10px; height: 250px; transition: background 0.3s ease;">
             <p><strong>LineSonati s.r.o.</strong></p>
             <p><strong>ICO :</strong> 19317760</p>
             <p><strong>DIC :</strong> CZ19317760</p>
@@ -436,8 +437,8 @@ input, textarea {
             <p><strong>Address:</strong> Práčská 1881/14, 106 00 Praha 10-Záběhlice</p>
         </div>
 
-        <!-- Контейнер с картой (ниже) -->
-        <div class="contact-map" style="background: rgba(51, 51, 51, var(--opacity, 0.8)); padding: 20px; border-radius: 10px; flex: 1; height: 300px;">
+        <!-- Контейнер с картой (снизу) -->
+        <div class="contact-map" style="background: rgba(51, 51, 51, var(--opacity, 0.8)); padding: 20px; border-radius: 10px; height: 250px;">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.269324306514!2d14.508496977010305!3d50.04787367158308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b928154a80bbf%3A0x80d01392cc9d76d6!2sPr%C3%A1%C4%8Dsk%C3%A1%201881%2F14%2C%20106%2000%20Praha%2010-Z%C3%A1b%C4%9Bhlice%2C%20Czechia!5e0!3m2!1sen!2scz!4v1707912334567!5m2!1sen!2scz" 
                 width="100%" 
@@ -466,15 +467,25 @@ input, textarea {
 
     /* Контейнер с картой и контактной информацией */
     .contact-info-and-map {
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        width: 100%;
-        margin-top: 20px;
+        position: fixed;
+        left: 0;
+        top: 20px; /* Сдвигаем блок немного вниз от верхнего края */
+        width: 300px; /* Ширина контейнера */
+        z-index: 10; /* Чтобы блок был поверх других элементов */
+        padding: 10px;
     }
 
     .contact-info, .contact-map {
-        flex: 1;
-        height: 300px; /* Сделать блоки одинаковой высоты */
+        height: 250px; /* Высота блоков */
+        background: rgba(51, 51, 51, 0.8);
+        border-radius: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px; /* Отступ между блоками */
+    }
+
+    .contact-map iframe {
+        border-radius: 10px;
     }
 </style>
