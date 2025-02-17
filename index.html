@@ -158,10 +158,10 @@
                 <img id="lang-flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN"> Language ▼
             </div>
             <div class="dropdown-content">
-                <a href="#" onclick="changeLanguage('en', 'United States', 'https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg')">English</a>
-                <a href="#" onclick="changeLanguage('ru', 'Russia', 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg')">Russian</a>
-                <a href="#" onclick="changeLanguage('cz', 'Czech Republic', 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg')">Czech</a>
-                <a href="#" onclick="changeLanguage('de', 'Germany', 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg')">German</a>
+                <a href="#" onclick="changeLanguage('en', 'United States', 'https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg', 'English')">English</a>
+                <a href="#" onclick="changeLanguage('ru', 'Russia', 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg', 'Russian')">Russian</a>
+                <a href="#" onclick="changeLanguage('cz', 'Czech Republic', 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg', 'Czech')">Czech</a>
+                <a href="#" onclick="changeLanguage('de', 'Germany', 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg', 'German')">German</a>
             </div>
         </div>
     </div>
@@ -242,7 +242,7 @@
         };
 
         // Функция для смены языка
-        function changeLanguage(lang, country, flagUrl) {
+        function changeLanguage(lang, country, flagUrl, languageName) {
             const langContent = languageData[lang];
 
             // Изменение текста на странице
@@ -254,7 +254,7 @@
 
             // Изменение флага и названия языка в выпадающем меню
             document.querySelector('.dropdown-toggle img').src = langContent.flag;
-            document.querySelector('.dropdown-toggle').innerHTML = country + " ▼";
+            document.querySelector('.dropdown-toggle').innerHTML = languageName + " ▼";
 
             // Изменение заголовка страницы
             document.title = langContent.home;
