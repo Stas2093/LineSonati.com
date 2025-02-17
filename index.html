@@ -40,32 +40,7 @@
             color: #32CD32;
         }
 
-        .partners-section {
-            background-color: white; /* Белый фон */
-            text-align: center;
-            padding: 60px;
-            color: black;
-            margin-top: 40px;
-        }
-
-        .partners-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .partners-logos {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .partners-logos img {
-            max-width: 150px; /* Уменьшаем логотипы */
-            margin-bottom: 20px;
-        }
+  
 
         .header {
             position: relative;
@@ -235,19 +210,36 @@
         <div class="header-text">LineSonati s.r.o.</div>
     </div>
 
-    <!-- Раздел "Наши Партнеры" -->
-    <div class="partners-section">
-        <h2>Our Partners</h2>
-        <div class="partners-logos">
-            <img src="image.21.png" alt="Partner 1">
-            <img src="image.22.png" alt="Partner 2">
-            <img src="image.23.png" alt="Partner 3">
-            <img src="image.24.png" alt="Partner 4">
-            <img src="image.25.jpg" alt="Partner 5">
-            <img src="image.27.png" alt="Partner 6">
-            <!-- Добавьте остальные логотипы по мере необходимости -->
-        </div>
+<!-- Раздел "Наши Партнеры" -->
+<div class="partners-section">
+    <h2>Our Partners</h2>
+    <!-- Вставка изображения с логотипами -->
+    <div class="partners-logos">
+        <img src="path/to/your-image.jpg" alt="Our Partners" style="width: 100%; height: auto;">
     </div>
+</div>
+
+<style>
+    .partners-section {
+        background-color: white; /* Белый фон */
+        text-align: center;
+        padding: 40px;
+        color: black;
+        margin-top: 40px;
+    }
+
+    .partners-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .partners-logos img {
+        width: 100%;  /* Растягиваем изображение на всю ширину */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    }
+</style>
+
 
     <!-- Раздел "Сервисы" -->
     <div class="services-section" id="services">
