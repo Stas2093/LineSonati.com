@@ -41,7 +41,7 @@
         }
 
 .partners-section {
-    background: rgba(255, 255, 255, 0.7); /* Белый фон с 70% прозрачностью */
+    background-color: white; /* Белый фон */
     text-align: center;
     padding: 20px 20px; /* Уменьшаем отступы сверху и снизу */
     color: black;
@@ -49,15 +49,7 @@
     height: 200px; /* Уменьшаем фиксированную высоту секции */
     }
 
-.partners-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый слой */
-    z-index: 1; /* Обеспечивает наложение на изображение */
+
 }
     .partners-section h2 {
         font-size: 2.5rem;
@@ -65,10 +57,13 @@
         margin-bottom: 20px;
     }
 
-.partners-logos {
-    position: relative;
-    z-index: 2; /* Логотипы будут отображаться поверх полупрозрачного слоя */
-    }
+  .partners-logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
 
     .partners-logos img {
         max-width: 500%; /* Растягиваем изображение на всю ширину */
