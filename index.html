@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LineSonati s.r.o. - Транспортные услуги</title> 
+    <title>LineSonati s.r.o. - Транспортные услуги</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            color: white; 
+            color: white;
         }
 
         .nav-bar { 
@@ -45,12 +45,6 @@
             gap: 15px;
         }
 
-        .nav-links a:last-child {
-            border: 2px solid black;
-            border-radius: 25px;
-            padding: 8px 20px;
-        }
-
         .header {
             position: relative;
             width: 100%;
@@ -79,6 +73,35 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
+        .partners-section {
+            background: url('image.66.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+            padding-top: 12cm; /* Увеличение высоты раздела для партнеров */
+        }
+
+        .partners-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px; /* Отступ снизу, чтобы не сливалось с логотипами */
+        }
+
+        .partners-section .partners-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .partners-section .partners-logos img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Раздел "Сервисы" */
         .services-section {
             text-align: center;
             padding: 60px 20px;
@@ -124,33 +147,6 @@
             font-size: 17px;
         }
 
-        /* Раздел "Наши партнеры" */
-        .partners-section {
-            background: url('image.66.jpg') no-repeat center center/cover;
-            text-align: center;
-            padding: 20px;
-            color: white;
-        }
-
-        .partners-section h2 {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .partners-section .partners-logos {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .partners-section .partners-logos img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-
-        /* Объединенные разделы "О нас" и "Контакты" */
         .about-contact-section {
             background: url('image.5.jpg') center/cover no-repeat;
             color: white;
@@ -219,14 +215,12 @@
             margin-bottom: 10px;
         }
 
-        /* Разделительная линия */
         .about-contact-section hr {
             width: 80%;
             margin: 40px auto;
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
-        /* Стиль для карты в правом нижнем углу */
         .map-container {
             position: absolute;
             bottom: 20px;
@@ -336,7 +330,6 @@
             </div>
         </div>
 
-        <!-- Полупрозрачная разделительная линия -->
         <hr>
 
         <!-- Контактная информация -->
@@ -360,9 +353,5 @@
         </div>
     </section>
 
-    <!-- Карта в правом нижнем углу -->
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
-    </div>
 </body>
 </html>
