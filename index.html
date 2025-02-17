@@ -40,21 +40,24 @@
             color: #32CD32;
         }
 
-        .partners-section {
-            background-color: white; /* Белый фон */
-            text-align: center;
-            padding: 60px;
-            color: black;
-            margin-top: 40px;
-        }
+.partners-section {
+    background-color: white; /* Белый фон */
+    text-align: center;
+    padding: 20px 20px; /* Уменьшаем отступы сверху и снизу */
+    color: black;
+    margin-top: 40px;
+    height: 200px; /* Уменьшаем фиксированную высоту секции */
+    }
 
-        .partners-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
 
-        .partners-logos {
+}
+    .partners-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+  .partners-logos {
             display: flex;
             justify-content: center;
             gap: 15px;
@@ -62,10 +65,12 @@
             margin-top: 20px;
         }
 
-        .partners-logos img {
-            max-width: 150px; /* Уменьшаем логотипы */
-            margin-bottom: 20px;
-        }
+    .partners-logos img {
+        max-width: 500%; /* Растягиваем изображение на всю ширину */
+        height: auto;
+        object-fit: cover; /* Растягиваем изображение, сохраняя пропорции */
+        margin-bottom: 20px;
+    }
 
         .header {
             position: relative;
@@ -236,18 +241,12 @@
     </div>
 
     <!-- Раздел "Наши Партнеры" -->
-    <div class="partners-section">
-        <h2>Our Partners</h2>
-        <div class="partners-logos">
-            <img src="image.21.png" alt="Partner 1">
-            <img src="image.22.png" alt="Partner 2">
-            <img src="image.23.png" alt="Partner 3">
-            <img src="image.24.png" alt="Partner 4">
-            <img src="image.25.jpg" alt="Partner 5">
-            <img src="image.27.png" alt="Partner 6">
-            <!-- Добавьте остальные логотипы по мере необходимости -->
-        </div>
+  <div class="partners-section">
+    <h2>Our Partners</h2>
+    <div class="partners-logos">
+        <img src="image.80.jpg" alt="Partners">
     </div>
+</div>
 
     <!-- Раздел "Сервисы" -->
     <div class="services-section" id="services">
