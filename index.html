@@ -51,7 +51,6 @@
             padding: 8px 20px;
         }
 
-        /* Заголовок */
         .header {
             position: relative;
             width: 100%;
@@ -80,7 +79,6 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
-        /* Сервисы */
         .services-section {
             text-align: center;
             padding: 60px 20px;
@@ -126,21 +124,33 @@
             font-size: 17px;
         }
 
-        /* Наши партнеры */
+        /* Раздел "Наши партнеры" */
         .partners-section {
             background: url('image.66.jpg') no-repeat center center/cover;
             text-align: center;
             padding: 20px;
             color: white;
-            margin-top: 40px;
         }
 
         .partners-section h2 {
             font-size: 2rem;
             font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        /* Объединенные разделы "О нас" и "Контакты" с единым фоном */
+        .partners-section .partners-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .partners-section .partners-logos img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Объединенные разделы "О нас" и "Контакты" */
         .about-contact-section {
             background: url('image.76.jpg.jpg') center/cover no-repeat;
             color: white;
@@ -192,7 +202,6 @@
             width: 100%;
         }
 
-        /* Контактная информация */
         .contact-info {
             max-width: 400px;
             text-align: left;
@@ -252,6 +261,13 @@
     <!-- Раздел "Наши Партнеры" -->
     <div class="partners-section">
         <h2>Our Partners</h2>
+        <div class="partners-logos">
+            <img src="path/to/logo1.png" alt="Partner 1">
+            <img src="path/to/logo2.png" alt="Partner 2">
+            <img src="path/to/logo3.png" alt="Partner 3">
+            <img src="path/to/logo4.png" alt="Partner 4">
+            <!-- Добавьте свои логотипы -->
+        </div>
     </div>
 
     <!-- Раздел "Сервисы" -->
