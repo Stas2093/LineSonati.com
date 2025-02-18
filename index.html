@@ -529,4 +529,66 @@
     .contact-form button:hover {
         background-color: #45a049;
     }
+
+/* ===== 📌 Фикс для мобильных устройств ===== */
+@media screen and (max-width: 768px) {
+    /* ✅ Исправляем навигацию */
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    /* ✅ Адаптируем логотипы партнеров */
+    .partners-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .partners-logos img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    /* ✅ Адаптируем секцию "Our Services" */
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .service-box {
+        padding: 20px;
+    }
+
+    .service-box img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-box h3 {
+        font-size: 18px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+    }
+}
 </style>
+</head>
