@@ -495,16 +495,18 @@
     }
 
        /* Стиль для формы в правом нижнем углу */
-        .contact-form-wrapper {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            padding: 20px;
-            background: rgba(51, 51, 51, 0.8);
-            border-radius: 10px;
-            color: white;
-        }
+      .contact-form-wrapper {
+    position: fixed;
+    bottom: 20px; /* Отступ снизу */
+    right: 20px; /* Отступ справа */
+    z-index: 1000;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+    color: white;
+    width: 300px; /* Устанавливаем ширину формы */
+    box-sizing: border-box; /* Чтобы отступы не выходили за пределы */
+}
     .contact-form-wrapper h3 {
             font-size: 20px;
             margin-bottom: 20px;
