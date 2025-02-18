@@ -249,39 +249,47 @@
         }
 
         .contact-form {
-    width: 350px; /* Устанавливаем ширину формы */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+    color: white;
     border-radius: 10px;
-    position: relative;
-    flex: 1; /* Заставляем форму занять оставшееся место */
-    margin-left: auto; /* Размещаем форму в правом углу */
-        }
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 400px; /* Максимальная ширина */
+    margin: auto; /* Выравнивание по центру */
+    overflow: hidden; /* Скрывает все, что выходит за пределы блока */
+}
 
         .contact-form input,
         .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
-        }
-
+      background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3); /* Белый бордер */
+    padding: 10px;
+    width: 100%; /* Ширина 100% */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитывает паддинг и бордер в общей ширине */
+}
         .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
+      background-color: #4CAF50; /* Зеленый фон */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Паддинг внутри кнопки */
+    width: 100%; /* Кнопка на всю ширину */
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box; /* Учитывает паддинг в ширине кнопки */
+}
+.contact-form button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
 
-        .contact-info {
-          max-width: 500px;
+.contact-info {
+    max-width: 500px;
     text-align: left;
-    flex: 1; /* Контактная информация займет всю доступную ширину */
-        }
+    margin: auto;
+}
       .contact-map {
            width: 350px; /* Уменьшаем карту */
     height: 250px; /* Высота карты */
