@@ -249,9 +249,9 @@
         }
 
      .contact-form {
-  position: absolute; /* Фиксируем форму */
-    right: 3%; /* Размещаем в правом нижнем углу */
-    bottom: 10%; /* Поднимаем над нижним краем */
+    position: absolute; /* Фиксируем форму */
+    right: 3%; /* Отступ справа, такой же как у карты слева */
+    bottom: 14%; /* Поднимаем форму выше */
     width: 320px; /* Фиксированная ширина */
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7); /* Затемнённый фон */
@@ -317,40 +317,58 @@
     cursor: pointer;
     transition: background 0.3s ease;
 }
-        .contact-form button {
-        width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-        }
+    
 .contact-form button:hover {
     background-color: #3e8e41;
 }
-/* Гибкость формы под экраны */
+/* Блок контактной информации */
+.contact-info {
+    position: absolute;
+    left: 3%; /* Такой же отступ, как у формы справа */
+    top: 14%; /* Размещаем блок повыше */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    width: 320px; /* Ширина блока */
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Карта */
+.contact-map {
+    position: absolute;
+    left: 3%; /* Такой же отступ */
+    top: 40%; /* Размещаем ниже контактной информации */
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Поддержка мобильных экранов */
 @media screen and (max-width: 1400px) {
-    .contact-form {
+    .contact-form, .contact-info, .contact-map {
         right: 2%;
-        bottom: 7%;
+        left: 2%;
+        bottom: 12%;
         width: 280px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .contact-form {
+    .contact-form, .contact-info, .contact-map {
         right: 1%;
-        bottom: 5%;
+        left: 1%;
+        bottom: 10%;
         width: 250px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .contact-form {
-        position: static; /* Отключаем абсолютное позиционирование */
+    .contact-form, .contact-info, .contact-map {
+        position: static;
         width: 90%;
         margin: 20px auto;
     }
