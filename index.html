@@ -248,17 +248,30 @@
             transform: translateY(-10px);
         }
 
-        .contact-form {
+     .contact-form {
     position: absolute; /* Фиксируем форму */
-    right: 20px; /* Смещаем вправо */
-    bottom: 20px; /* Смещаем вниз */
-    width: 350px; /* Оптимальный размер */
+    right: 5%; /* Смещаем к правому краю, но не до конца */
+    bottom: 5%; /* Смещаем вниз */
+    width: 320px; /* Оптимальный размер */
+    max-width: 90%; /* Запрет на выход за пределы экрана */
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.7); /* Затемнённый фон */
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+/* Ограничиваем размер полей */
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 6px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
 .contact-form h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -281,6 +294,18 @@
     height: 80px;
     resize: none;
 }
+/* Кнопка */
+.contact-form button {
+    width: 90%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
         .contact-form button {
         width: 100%;
     padding: 10px;
@@ -299,7 +324,7 @@
 @media screen and (max-width: 768px) {
     .contact-form {
         position: static; /* Отключаем абсолютное позиционирование на телефонах */
-        width: 90%; /* Делаем шире, чтобы вписаться в экран */
+        width: 90%;
         margin: 20px auto; /* Центрируем */
     }
 }
