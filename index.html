@@ -249,34 +249,49 @@
         }
 
         .contact-form {
-    width: 350px; /* Устанавливаем ширину формы */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+    width: 100%;
+    padding: 15px; /* Уменьшаем внутренние отступы */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
     border-radius: 10px;
-    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
     flex: 1; /* Заставляем форму занять оставшееся место */
     margin-left: auto; /* Размещаем форму в правом углу */
         }
+.contact-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
 
         .contact-form input,
         .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
+              width: 95%; /* Чуть уменьшаем ширину, чтобы не упиралось в края */
+    padding: 8px; /* Уменьшаем поля внутри */
+    margin: 8px 0; /* Чуть меньше отступы между полями */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
         }
-
+.contact-form textarea {
+    height: 80px; /* Уменьшаем высоту поля ввода */
+    resize: none; /* Запрещаем изменение размера */
+}
         .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
+          width: 100%; /* Кнопка остается на всю ширину формы */
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
         }
-
+.contact-form button:hover {
+    background-color: #3e8e41;
+}
         .contact-info {
           max-width: 500px;
     text-align: left;
