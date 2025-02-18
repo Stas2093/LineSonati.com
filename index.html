@@ -248,38 +248,44 @@
         }
 
 .contact-form-wrapper {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    width: 350px; /* Фиксированная ширина */
-    background-color: rgba(51, 51, 51, 0.8); 
+    width: 400px; /* Фиксированная ширина блока */
+    height: auto; /* Высота будет автоматически подстраиваться под содержимое */
+    background-color: rgba(51, 51, 51, 0.8); /* Прозрачный фон */
     padding: 20px;
-    border-radius: 10px; 
-    margin: 0 auto; 
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box; /* Убедитесь, что padding не выходит за пределы */
+    border-radius: 10px;
+    margin: 20px auto; /* Центрируем блок по горизонтали */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10; /* Убираем наложение с другими блоками */
+}
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
- .contact-form input,
+.contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; /* Включаем отступы и границы в общую ширину */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-    .contact-form button {
-    width: 100%;
-    padding: 10px;
+.contact-form button {
     background-color: #4CAF50;
     color: white;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #45a049;
 }
 
         .contact-info {
