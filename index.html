@@ -101,21 +101,28 @@
             color: #32CD32;
          }
 
-        /* Обновленный контейнер для контактов и карты */
-        .contact-container {
-     display: flex;
-    justify-content: space-between; /* Размещаем элементы по горизонтали */
-    align-items: flex-end; /* Выравнивание по нижнему краю */
-    gap: 40px;
+  /* Общий контейнер для всех элементов (контакты, карта, форма) */
+.contact-container {
+    position: absolute;
+    bottom: 12%; /* Выравниваем от нижнего края */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
     padding: 20px;
-        }
-      /* Блок с контактной информацией */
-        .contact-info {
-             max-width: 500px;
-    text-align: left;
-    flex: 1; /* Контактная информация займет всю доступную ширину */
-        }
-
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1100px;
+   /* Секция с контактной информацией */
+.contact-info {
+    flex: 1; /* Растягивается внутри блока */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
 .partners-section {
     background: rgba(0, 255, 255, 0.1); /* Цвет фона с полупрозрачностью */
     text-align: center;
@@ -284,23 +291,20 @@
     box-sizing: border-box;
 }
 .contact-form h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: black;
+    color: white;
+    margin-bottom: 15px;
 }
 
-        .contact-form input,
-        .contact-form textarea {
-     width: calc(100% - 20px);
-    max-width: 320px;
+/* Поля ввода */
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
     padding: 8px;
-    margin: 6px auto;
-    display: block;
+    margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: none;
     font-size: 14px;
-    box-sizing: border-box;
-        }
+}
 .contact-form textarea {
     height: 80px;
     resize: none;
@@ -315,7 +319,6 @@
     color: white;
     font-size: 15px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
     
 .contact-form button:hover {
@@ -337,15 +340,14 @@
 
 /* Карта */
 .contact-map {
-    position: absolute;
-    left: 3%; /* Такой же отступ */
-    top: 40%; /* Размещаем ниже контактной информации */
-    width: 320px;
-    height: 220px;
+    flex: 1; /* Занимает равное место */
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Поддержка мобильных экранов */
 @media screen and (max-width: 1400px) {
@@ -373,12 +375,22 @@
         margin: 20px auto;
     }
 }
-/* Адаптация для мобильных */
-@media screen and (max-width: 768px) {
-    .contact-form {
-        position: static; /* Отключаем абсолютное позиционирование на телефонах */
+/* Адаптация под мобильные устройства */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column; /* На мобильных блоки идут вертикально */
+        text-align: center;
         width: 90%;
-        margin: 20px auto; /* Центрируем */
+    }
+
+    .contact-info,
+    .contact-map,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-map iframe {
+        height: 150px;
     }
 }
         .contact-info {
@@ -402,12 +414,11 @@
     border-radius: 10px;
             border-radius: 10px; /* Добавляем округление углов */
         }
-          .contact-map iframe {
-              width: 100%;
-    height: 100%;
-    border: 0;
+.contact-map iframe {
+    width: 100%;
+    height: 180px;
     border-radius: 10px;
-        }
+}
         .contact-info p {
           margin-bottom: 10px;
             font-size: 1.1rem;
@@ -599,18 +610,14 @@
         border-radius: 10px;
     }
 
-    /* Контактная форма */
-    .contact-form {
-        background: rgba(51, 51, 51, var(--opacity, 0.8));
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        height: 33%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        transition: background 0.3s ease, transform 0.3s ease;
-    }
+/* Контактная форма */
+.contact-form {
+    flex: 1; /* Равномерно распределяем место */
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
     .contact-form input, .contact-form textarea {
         margin-bottom: 10px;
