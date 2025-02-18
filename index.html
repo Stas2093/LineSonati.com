@@ -247,40 +247,35 @@
             transform: translateY(-10px);
         }
 
-.contact-form-wrapper {
-    position: fixed; /* Фиксируем элемент */
-    bottom: 20px; /* Расстояние от нижнего края */
-    right: 20px; /* Расстояние от правого края */
-    z-index: 1000; /* Чтобы элемент не перекрывался другими блоками */
-    width: 300px; /* Ширина блока */
-    background-color: rgba(51, 51, 51, 0.8); /* Полупрозрачный фон */
+        .contact-form {
+    width: 350px; /* Устанавливаем ширину формы */
     padding: 20px;
-    border-radius: 10px; /* Округляем углы */
-}
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    border-radius: 10px;
+    position: relative;
+    flex: 1; /* Заставляем форму занять оставшееся место */
+    margin-left: auto; /* Размещаем форму в правом углу */
+        }
 
-   .contact-form-wrapper input,
-.contact-form-wrapper textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
 
-    .contact-form-wrapper button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.contact-form-wrapper button:hover {
-    background-color: #45a049;
-}
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
         .contact-info {
           max-width: 500px;
     text-align: left;
@@ -422,15 +417,20 @@
 </div>
 
         <hr>
-<div class="contact-form-wrapper">
-    <h3>Contact Us</h3>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+
+        <!-- Контактная информация -->
+    <!-- Добавить якорь для "Contact" в этой же секции -->
+<section class="about-contact-section" id="contact">
+    <!-- Контактная форма -->
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
     <!-- Контейнер для контактной информации и карты -->
     <div class="contact-info-and-map" style="display: flex; flex-direction: column; gap: 10px; width: 450px; height: 600px; padding: 10px;">
@@ -487,6 +487,46 @@
         width: 300px; /* Ширина контейнера */
         height: 500px; /* Общая высота контейнера */
         z-index: 10;
+    }
+
+    .contact-info iframe,
+    .contact-map iframe {
+        border-radius: 10px;
+    }
+
+    /* Контактная форма */
+    .contact-form {
+        background: rgba(51, 51, 51, var(--opacity, 0.8));
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-form input, .contact-form textarea {
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 120%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+        padding: 20px;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #45a049;
     }
 
 /* ===== 📌 Фикс для мобильных устройств ===== */
