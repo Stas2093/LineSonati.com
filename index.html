@@ -247,35 +247,41 @@
             transform: translateY(-10px);
         }
 
-        .contact-form {
-    width: 350px; /* Устанавливаем ширину формы */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
-    border-radius: 10px;
-    position: relative;
-    flex: 1; /* Заставляем форму занять оставшееся место */
-    margin-left: auto; /* Размещаем форму в правом углу */
-        }
+.contact-form-wrapper {
+    position: fixed;
+    bottom: 20px; /* отступ от низа */
+    right: 20px; /* отступ от правого края */
+    width: 320px; /* фиксированная ширина блока */
+    padding: 15px; /* отступы внутри блока */
+    background-color: rgba(0, 0, 0, 0.7); /* полупрозрачный фон */
+    border-radius: 10px; /* округление углов */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* тень */
+    overflow: hidden; /* убирает выходящие за пределы элементы */
+}
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
-        }
+   .contact-form-wrapper input,
+.contact-form-wrapper textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
 
-        .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
+    .contact-form-wrapper button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form-wrapper button:hover {
+    background-color: #45a049;
+}
         .contact-info {
           max-width: 500px;
     text-align: left;
