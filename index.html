@@ -13,21 +13,8 @@
             font-family: 'Arial', sans-serif;
             color: white;
         }
+  }
 
-        .nav-bar { 
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.1); 
-            padding: 10px 0;
-            text-align: center;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            padding: 8px 40px;
-            backdrop-filter: blur(10px);
-        }
 /* 📌 Делаем навигацию мобильной */
 @media screen and (max-width: 768px) {
     .nav-bar {
@@ -84,7 +71,22 @@
         background-size: contain; /* Чтобы картинка не обрезалась */
         background-position: center;
     }
-   }
+}
+
+        .nav-bar { 
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.1); 
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 8px 40px;
+            backdrop-filter: blur(10px);
+        }
 
         .nav-bar a {
             color: black;
