@@ -249,15 +249,13 @@
         }
 
         .contact-form {
-    max-width: 400px; /* Ограничиваем максимальную ширину */
+      max-width: 380px; /* Чуть уменьшаем ширину формы */
     width: 100%;
-    padding: 15px; /* Уменьшаем внутренние отступы */
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
-    flex: 1; /* Заставляем форму занять оставшееся место */
-    margin-left: auto; /* Размещаем форму в правом углу */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 .contact-form h3 {
     font-size: 18px;
@@ -267,19 +265,22 @@
 
         .contact-form input,
         .contact-form textarea {
-              width: 95%; /* Чуть уменьшаем ширину, чтобы не упиралось в края */
-    padding: 8px; /* Уменьшаем поля внутри */
-    margin: 8px 0; /* Чуть меньше отступы между полями */
+    width: calc(100% - 20px); /* Теперь поля не выходят за границы формы */
+    max-width: 360px; /* Ограничиваем максимальную ширину */
+    padding: 8px;
+    margin: 6px auto; /* Центрируем */
+    display: block;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 15px;
+    font-size: 14px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
         }
 .contact-form textarea {
-    height: 80px; /* Уменьшаем высоту поля ввода */
-    resize: none; /* Запрещаем изменение размера */
+    height: 80px;
+    resize: none;
 }
         .contact-form button {
-          width: 100%; /* Кнопка остается на всю ширину формы */
+            width: 100%;
     padding: 10px;
     background-color: #4CAF50;
     border: none;
