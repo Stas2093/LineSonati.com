@@ -248,15 +248,14 @@
         }
 
 .contact-form-wrapper {
-    position: fixed;
-    bottom: 20px; /* отступ от низа */
-    right: 20px; /* отступ от правого края */
-    width: 320px; /* фиксированная ширина блока */
-    padding: 15px; /* отступы внутри блока */
-    background-color: rgba(0, 0, 0, 0.7); /* полупрозрачный фон */
-    border-radius: 10px; /* округление углов */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* тень */
-    overflow: hidden; /* убирает выходящие за пределы элементы */
+    position: fixed; /* Фиксируем элемент */
+    bottom: 20px; /* Расстояние от нижнего края */
+    right: 20px; /* Расстояние от правого края */
+    z-index: 1000; /* Чтобы элемент не перекрывался другими блоками */
+    width: 300px; /* Ширина блока */
+    background-color: rgba(51, 51, 51, 0.8); /* Полупрозрачный фон */
+    padding: 20px;
+    border-radius: 10px; /* Округляем углы */
 }
 
    .contact-form-wrapper input,
