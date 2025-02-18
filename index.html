@@ -249,8 +249,10 @@
         }
 
         .contact-form {
-      max-width: 380px; /* Чуть уменьшаем ширину формы */
-    width: 100%;
+    position: absolute; /* Фиксируем форму */
+    right: 20px; /* Смещаем вправо */
+    bottom: 20px; /* Смещаем вниз */
+    width: 350px; /* Оптимальный размер */
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -265,22 +267,22 @@
 
         .contact-form input,
         .contact-form textarea {
-    width: calc(100% - 20px); /* Теперь поля не выходят за границы формы */
-    max-width: 360px; /* Ограничиваем максимальную ширину */
+     width: calc(100% - 20px);
+    max-width: 320px;
     padding: 8px;
-    margin: 6px auto; /* Центрируем */
+    margin: 6px auto;
     display: block;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
-    box-sizing: border-box; /* Учитываем padding в ширине */
+    box-sizing: border-box;
         }
 .contact-form textarea {
     height: 80px;
     resize: none;
 }
         .contact-form button {
-            width: 100%;
+        width: 100%;
     padding: 10px;
     background-color: #4CAF50;
     border: none;
@@ -292,6 +294,14 @@
         }
 .contact-form button:hover {
     background-color: #3e8e41;
+}
+/* Адаптация для мобильных */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        position: static; /* Отключаем абсолютное позиционирование на телефонах */
+        width: 90%; /* Делаем шире, чтобы вписаться в экран */
+        margin: 20px auto; /* Центрируем */
+    }
 }
         .contact-info {
           max-width: 500px;
