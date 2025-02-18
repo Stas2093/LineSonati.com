@@ -248,37 +248,39 @@
         }
 
 .contact-form-wrapper {
-    position: fixed; /* Фиксируем элемент */
-    bottom: 20px; /* Расстояние от нижнего края */
-    right: 20px; /* Расстояние от правого края */
-    z-index: 1000; /* Чтобы элемент не перекрывался другими блоками */
-    width: 300px; /* Ширина блока */
-    background-color: rgba(51, 51, 51, 0.8); /* Полупрозрачный фон */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 350px; /* Фиксированная ширина */
+    background-color: rgba(51, 51, 51, 0.8); 
     padding: 20px;
-    border-radius: 10px; /* Округляем углы */
-    margin: 0 auto; /* Центрируем блок */
-    left: 50%; /* Центрируем по горизонтали */
-    transform: translateX(-50%); /* Корректируем точку центрирования */
+    border-radius: 10px; 
+    margin: 0 auto; 
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box; /* Убедитесь, что padding не выходит за пределы */
 }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
-        }
+ .contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Включаем отступы и границы в общую ширину */
+}
 
-        .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
+    .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
         .contact-info {
           max-width: 500px;
