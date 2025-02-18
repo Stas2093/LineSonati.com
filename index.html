@@ -6,103 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LineSonati s.r.o. - Транспортные услуги</title>
           <style>  
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: white;
- <style>
-@media (max-width: 768px) {
-    /* Общие стили для мобильных устройств */
-    body {
-        font-size: 14px;
-    }
 
-    /* Навигация */
-    .nav-bar {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 10px;
-    }
-
-    /* Шапка */
-    .header {
-        height: 500px;
-    }
-
-    .header-text {
-        font-size: 32px;
-    }
-
-    /* Секция партнеров */
-    .partners-section {
-        padding: 20px;
-        height: auto;
-    }
-
-    .partners-logos img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Сервисы */
-    .services-container {
-        grid-template-columns: 1fr;
-    }
-
-    .service-box {
-        padding: 20px;
-    }
-
-    /* Секция "О нас" и "Контакты" */
-    .about-contact-section {
-        padding: 40px 10px;
-    }
-
-    .floating-card {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    /* Контактная информация и карта */
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-info {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .contact-form {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .contact-info-and-map {
-        width: 100%;
-    }
-
-    .contact-map {
-        width: 100%;
-        height: 300px;
-    }
-
-    .contact-map iframe {
-        height: 100%;
-    }
-    <style>
-    <head>
         body {
             margin: 0;
             padding: 0;
@@ -124,6 +28,63 @@
             padding: 8px 40px;
             backdrop-filter: blur(10px);
         }
+/* 📌 Делаем навигацию мобильной */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* 📌 Исправляем контент, чтобы он влезал в экран */
+@media screen and (max-width: 768px) {
+    .header-text {
+        font-size: 32px; /* Уменьшаем размер шрифта */
+    }
+
+    .about-contact-section {
+        padding: 40px 10px;
+    }
+
+    .floating-card {
+        max-width: 90%;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Один столбец на маленьком экране */
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .contact-map {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* 📌 Фиксим фоновые изображения */
+@media screen and (max-width: 768px) {
+    .about-contact-section {
+        background-size: contain; /* Чтобы картинка не обрезалась */
+        background-position: center;
+    }
+   }
 
         .nav-bar a {
             color: black;
